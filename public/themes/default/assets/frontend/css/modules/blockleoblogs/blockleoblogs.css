@@ -1,0 +1,59 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+.blog_container {
+  background: #fff;
+}
+.blog_container .blog-image {
+  float: left;
+  margin-right: 20px;
+}
+.rtl .blog_container .blog-image {
+  float: right;
+}
+.rtl .blog_container .blog-image {
+  margin-left: 20px;
+  margin-right: inherit;
+}
+.blog_container .blog-meta {
+  padding: 17px 20px 17px 20px;
+  font-family: "Open Sans";
+  font-size: 13px;
+}
+.rtl .blog_container .blog-meta {
+  padding: 17px 20px 17px 20px;
+}
+.blog_container .blog-meta h5 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-family: "Roboto Slab", sans-serif;
+}
+.blog_container .blog-shortinfo {
+  margin-bottom: 19px;
+}
+.blog_container .view {
+  font-size: 13px;
+  font-family: "Roboto Slab", sans-serif;
+  color: #aa8255;
+  text-transform: uppercase;
+}

@@ -3,6 +3,6 @@
 return [
 	'name' => 'Core',
 	'folder' => 'themes',
-	'active' => 'default',
+	'active' => 'nail',
 	'nail'=>'nail'
 ];

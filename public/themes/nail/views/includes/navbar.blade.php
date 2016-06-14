@@ -5,16 +5,16 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul id="nav" class="navbar-nav">
-                <li class="dropdown"><a href="/">Home <span class="caret"></span></a>
+                <li class="dropdown"><a href="larcms/public/">Home <span class="caret"></span></a>
                 </li>
-                <li><a href="/about">About Us</a></li>
+                <li><a href="larcms/public/about">About Us</a></li>
 
 
-                <li class="dropdown"><a href="/gallery">Gallery</a>
+                <li class="dropdown"><a href="larcms/public/gallery">Gallery</a>
                 </li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="larcms/public/services">Services</a></li>
+                <li><a href="larcms/public/blog">Blog</a></li>
+                <li><a href="larcms/public/contact">Contact</a></li>
             </ul>
         </div>
     </nav>

@@ -4,7 +4,7 @@
         <div class="container">
 
             <strong class="cp-logo">
-                <a href="#">
+                <a href="/">
                     <em>Nail</em>
                     ig <span>Salon</span>
                 </a>

@@ -7,10 +7,10 @@ if ( !function_exists('theme')) {
         return url(config('core.folder').'/'.config('core.active').'/assets/frontend/'.$path);
     }
 }
-if ( !function_exists('themeadmin')) {
-    function themeadmin($path) {
+if ( !function_exists('admin')) {
+    function admin($path) {
 
 
-        return url(config('core.folder').'/'.config('core.active').'/assets/backend/'.$path);
+        return url(config('core.folder').'/'.config('auth.admin').'/assets/'.$path);
     }
 }

@@ -12,8 +12,9 @@ return [
     | not explicitly specified when executing a given caching function.
     |
     */
-
-    'default' => env('CACHE_DRIVER', 'file'),
+    //@todo config redis
+    //'default' => env('CACHE_DRIVER', 'file'),
+    'default' => env('CACHE_DRIVER', 'redis'),
 
     /*
     |--------------------------------------------------------------------------

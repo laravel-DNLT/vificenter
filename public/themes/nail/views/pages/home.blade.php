@@ -410,8 +410,8 @@
 								<span class="icon-holder">
 									<i class="fa fa-quote-right"></i>
 								</span>
-                            <p>Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.</p>
-                            <strong class="name">“John Doe”</strong>
+                            <p>It was my first time there and they new what I wanted and my nails turned out perfect! N I would recommend it to any one. That lives here off of W.6th St.n Sherman. I paid 30 n was charged 1.00. Not bad in my opion. Just saying.</p>
+                            <strong class="name">“Lee C”</strong>
                         </div>
                     </li>
                     <li>
@@ -419,8 +419,8 @@
 								<span class="icon-holder">
 									<i class="fa fa-quote-right"></i>
 								</span>
-                            <p>Famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas.Mellentesque habitant morbi tristique et Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada famesac turpis egestas Mellentesque habitant morbi tristique senectus et netus et malesuada .</p>
-                            <strong class="name">“Britney Doe”</strong>
+                            <p>Saw something on Facebook about this new nail place close to home so I decided to give it a try. They are very friendly and it is very clean kelly did my pedicure and meghan did my nails tye also helped. I enjoyed my expierence and will definitely be back.</p>
+                            <strong class="name">“K. Fabian B.”</strong>
                         </div>
                     </li>
                 </ul>

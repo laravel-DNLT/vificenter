@@ -10,8 +10,8 @@ if($('#testimonial-slider').length){$('#testimonial-slider').bxSlider({auto:true
 if($('#product-slider').length){$('#product-slider').bxSlider({auto:true,pagerCustom:'#bx-pager',navigation:false,});}
 if($('.portfolioContainer').length){var $container=$('.portfolioContainer');$container.isotope({filter:'*',animationOptions:{duration:750,easing:'linear',queue:false}});$('.cp_portfolioFilter a').on("click",function(){$('.cp_portfolioFilter .current').removeClass('current');$(this).addClass('current');var selector=$(this).attr('data-filter');$container.isotope({filter:selector,animationOptions:{duration:750,easing:'linear',queue:false}});return false;});}
 if($('audio').length){$('audio').audioPlayer();}
-if($('#map_contact_1').length){var map;var myLatLng=new google.maps.LatLng(48.85661,2.35222);var myOptions={zoom:12,center:myLatLng,zoomControl:true,mapTypeId:google.maps.MapTypeId.ROADMAP,mapTypeControl:false,styles:[{stylers:[{hue:'#cacaca'},{saturation:-100,},{lightness:10}]}],}
-map=new google.maps.Map(document.getElementById('map_contact_1'),myOptions);var marker=new google.maps.Marker({position:map.getCenter(),map:map,icon:'Images/map-marker.png',});marker.getPosition();}
+if($('#map_contact_1').length){var map;var myLatLng=new google.maps.LatLng(33.878087,-117.588378);var myOptions={zoom:12,center:myLatLng,zoomControl:true,mapTypeId:google.maps.MapTypeId.ROADMAP,mapTypeControl:false,styles:[{stylers:[{hue:'#cacaca'},{saturation:-100,},{lightness:10}]}],}
+map=new google.maps.Map(document.getElementById('map_contact_1'),myOptions);var marker=new google.maps.Marker({position:map.getCenter(),map:map,icon:'themes/nail/assets/frontend/images/map-marker.png',});marker.getPosition();}
 if($('#tweecool').length){$('#tweecool').tweecool({username:'crunchpress',limit:3,});}
 if($('#event-countdown').length){var austDay=new Date();austDay=new Date(2015,12-1,5,12,15)
 $('#event-countdown').countdown({labels:['Years','Months','Weeks','Days','Hours','Minutes','Seconds'],until:austDay});$('#year').text(austDay.getFullYear());}

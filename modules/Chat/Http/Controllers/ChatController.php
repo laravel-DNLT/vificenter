@@ -3,10 +3,16 @@
 use Pingpong\Modules\Routing\Controller;
 
 class ChatController extends Controller {
-	
-	public function index()
+
+	public function __construct()
 	{
-		return view('chat::index');
+		$this->middleware('guest');
+	}
+	public function sendMessage(){
+		$redis = LRedis::connection();
+		$data = ['message' => Request::input('message'), 'user' => Request::input('user')];
+		$redis->publish('message', json_encode($data));
+		return response()->json([]);
 	}
 	
 }

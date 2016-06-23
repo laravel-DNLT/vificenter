@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Redis;
 
 Route::group(['middleware' => 'web', 'prefix' => 'chat', 'namespace' => 'Modules\Chat\Http\Controllers'], function()
 {
-
+	Route::auth();
 	Route::get('/', function(){
+
 		//Redis::set('name','Chan Tam');
 		//return Redis::get('name');
 		//return Redis::hget('preferences','length');
@@ -21,5 +22,6 @@ Route::group(['middleware' => 'web', 'prefix' => 'chat', 'namespace' => 'Modules
 		return view('auth.chat');
 
 	});
+	Route::post('sendmessage', 'ChatController@sendMessage');
 
 });

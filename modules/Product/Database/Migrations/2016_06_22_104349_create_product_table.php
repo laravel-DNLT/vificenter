@@ -12,7 +12,7 @@ class CreateProductTable extends Migration {
      */
     public function up()
     {
-        Schema::create('product', function(Blueprint $table)
+        Schema::create('products', function(Blueprint $table)
         {
             $table->increments('id');
             $table->timestamps();
@@ -31,7 +31,7 @@ class CreateProductTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('product');
+        Schema::drop('products');
     }
 
 }

@@ -15,6 +15,8 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers';
+    
+//    protected $Productnamespace = 'modules\Product\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -57,5 +59,11 @@ class RouteServiceProvider extends ServiceProvider
         ], function ($router) {
             require app_path('Http/routes.php');
         });
+//
+//        $router->group([
+//            'namespace' => $this->Productnamespace, 'middleware' => 'web',
+//        ], function ($router) {
+//            require app_path('Http/routes.php');
+//        });
     }
 }

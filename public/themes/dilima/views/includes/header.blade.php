@@ -64,7 +64,7 @@
                     <div class="user-info-adn-search">
                         <div class="user-info">
                             <p>
-                                <a href="#"><i class="fa fa-user"></i> My Account</a>
+                                <a href="{{ route('pages.login') }}"><i class="fa fa-user"></i> My Account</a>
                                 <a href="wishlists.html"><i class="fa fa-heart-o"></i> Wishlist</a>
                                 <a href="#"><i class="fa fa-key"></i> Sign out</a>
                                 <a href="#"><i class="fa fa-signal"></i> Compare</a>

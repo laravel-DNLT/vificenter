@@ -13,3 +13,4 @@
 */
 
 require __DIR__ . '/Http/routes.php';
+//require 'F:/Project/larnode/modules/Product/Http/routes.php';

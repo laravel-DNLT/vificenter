@@ -2,5 +2,5 @@
 
 return [
 	'name' => 'Auth',
-	'admin'=>'startui'
+	'admin'=>'gentelella'
 ];

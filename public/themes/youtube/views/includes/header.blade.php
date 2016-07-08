@@ -6,19 +6,19 @@
                 <div class="topBarMenu">
                     <ul class="menu">
                         <li>
-                            <a href="home-v1.html"><i class="fa fa-home"></i>Trang chủ</a>
+                            <a href="{{ url('/') }}"><i class="fa fa-home"></i>Trang chủ</a>
                         </li>
                         <li>
-                            <a href="categories.html"><i class="fa fa-th-large"></i>Danh mục</a>
+                            <a href="{{ url('/danh-muc') }}"><i class="fa fa-th-large"></i>Danh mục</a>
                         </li>
                         <li>
-                            <a href="about-us.html"><i class="fa fa-user"></i>Giới thiệu</a>
+                            <a href="{{ url('/gioi-thieu') }}"><i class="fa fa-user"></i>Giới thiệu</a>
                         </li>
                         <li>
-                            <a href="blog.html"><i class="fa fa-pencil-square-o"></i>Blog</a>
+                            <a href="{{ url('/blog') }}"><i class="fa fa-pencil-square-o"></i>Blog</a>
                         </li>
                         <li>
-                            <a href="contact-us.html"><i class="fa fa-envelope"></i>Liên hệ</a>
+                            <a href="{{ url('/lien-he') }}"><i class="fa fa-envelope"></i>Liên hệ</a>
                         </li>
                     </ul>
                 </div>

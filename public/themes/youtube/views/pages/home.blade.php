@@ -79,12 +79,12 @@
                     <div class="medium-8 small-8 columns">
                         <div class="head-title">
                             <i class="fa fa-film"></i>
-                            <h4>Newest Videos</h4>
+                            <h4>Video Mới Nhất</h4>
                         </div>
                     </div>
                     <div class="medium-4 small-4 columns">
                         <ul class="tabs text-right pull-right" data-tabs>
-                            <li class="tabs-title is-active"><a class="is-active" href="#" data-tab="1">all</a></li>
+                            <li class="tabs-title is-active"><a class="is-active" href="#" data-tab="1">All</a></li>
                             <li class="tabs-title" data-tab-index="1"><a href="#" data-tab="2">HD</a></li>
                         </ul>
                     </div>
@@ -93,7 +93,7 @@
             <div class="row secBg">
                 <div class="large-12 columns">
                     <div class="row column head-text clearfix">
-                        <p class="pull-left">All Videos : <span>1,862 Videos posted</span></p>
+                        <p class="pull-left">Tất cả video : <span>1,862 Videos được đăng</span></p>
                         <div class="grid-system pull-right show-for-large">
                             <a class="secondary-button current grid-default" href="#"><i class="fa fa-th"></i></a>
                             <a class="secondary-button grid-medium" href="#"><i class="fa fa-th-large"></i></a>
@@ -107,8 +107,8 @@
                                     <div class="post thumb-border">
                                         <div class="post-thumb">
                                             <img src="{{theme('images/video-thumbnail/1.jpg')}}" alt="new video">
-                                            <a href="single-video-v2.html" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
+                                            <a href="https://www.youtube.com/?gl=VN" class="hover-posts">
+                                                <span><i class="fa fa-play"></i>Xem Video</span>
                                             </a>
                                             <div class="video-stats clearfix">
                                                 <div class="thumb-stats pull-left">
@@ -132,7 +132,7 @@
                                                 </p>
                                                 <p class="pull-left">
                                                     <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
+                                                    <span>5/1/2016</span>
                                                 </p>
                                                 <p class="pull-left">
                                                     <i class="fa fa-eye"></i>
@@ -690,7 +690,7 @@
                         </div>
                     </div>
                     <div class="text-center row-btn">
-                        <a class="button radius" href="all-video.html">View All Video</a>
+                        <a class="button radius" href="{{ url('video/tat-ca-video') }}">Xem Tất Cả</a>
                     </div>
                 </div>
             </div>
@@ -708,7 +708,7 @@
                     <div class="medium-8 small-8 columns">
                         <div class="head-title">
                             <i class="fa fa-star"></i>
-                            <h4>Most Popular Videos</h4>
+                            <h4>Videos Xem Nhiều Nhất</h4>
                         </div>
                     </div>
                     <div class="medium-4 small-4 columns">
@@ -722,7 +722,7 @@
             <div class="row secBg">
                 <div class="large-12 columns">
                     <div class="row column head-text clearfix">
-                        <p class="pull-left">All Videos : <span>1,862 Videos posted</span></p>
+                        <p class="pull-left">Tất cả video : <span>1,862 Videos được đăng</span></p>
                         <div class="grid-system pull-right show-for-large">
                             <a class="secondary-button current grid-default" href="#"><i class="fa fa-th"></i></a>
                             <a class="secondary-button grid-medium" href="#"><i class="fa fa-th-large"></i></a>
@@ -1319,7 +1319,7 @@
                         </div>
                     </div>
                     <div class="text-center row-btn">
-                        <a class="button radius" href="all-video.html">View All Video</a>
+                        <a class="button radius" href="{{ url('video/tat-ca-video') }}">Xem Tất Cả</a>
                     </div>
                 </div>
             </div>
@@ -1336,7 +1336,7 @@
                         <div class="heading category-heading clearfix">
                             <div class="cat-head pull-left">
                                 <i class="fa fa-video-camera"></i>
-                                <h4>Watch Movies</h4>
+                                <h4>Xem Phim</h4>
                             </div>
                             <div>
                                 <div class="navText pull-right show-for-large">

@@ -1,14 +1,14 @@
 @extends('layouts.frontend')
-@section('title','Danh Mục')
+@section('title','Hài Trấn Thành')
 @section('content')
 <section id="breadcrumb">
     <div class="row">
         <div class="large-12 columns">
             <nav aria-label="You are here:" role="navigation">
                 <ul class="breadcrumbs">
-                    <li><i class="fa fa-home"></i><a href="{{ url('/') }}">Trang Chủ</a></li>
+                    <li><i class="fa fa-home"></i><a href="home-v1.html">Home</a></li>
                     <li>
-                        <span class="show-for-sr">Current: </span> Danh Mục
+                        <span class="show-for-sr">Current: </span> Hài Trấn Thành
                     </li>
                 </ul>
             </nav>
@@ -20,7 +20,7 @@
     <div class="row">
         <div class="heading clearfix">
             <div class="large-11 columns">
-                <h4><i class="fa fa-play-circle-o"></i>Các Video Cao Cấp</h4>
+                <h4><i class="fa fa-play-circle-o"></i>Premium Videos</h4>
             </div>
             <div class="large-1 columns">
                 <div class="navText show-for-large">
@@ -36,11 +36,11 @@
                 <img src="{{theme('images/premium1.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
         <div class="item">
@@ -48,11 +48,11 @@
                 <img src="{{theme('images/premium2.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
         <div class="item">
@@ -60,11 +60,11 @@
                 <img src="{{theme('images/premium3.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
         <div class="item">
@@ -72,11 +72,11 @@
                 <img src="{{theme('images/premium4.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
         <div class="item">
@@ -84,11 +84,11 @@
                 <img src="{{theme('images/premium1.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
         <div class="item">
@@ -96,11 +96,11 @@
                 <img src="{{theme('images/premium2.png')}}" alt="carousel">
                 <figcaption>
                     <h5>ICE Age 5 upcoming Movie</h5>
-                    <p>Trailer</p>
+                    <p>Movies Trailer</p>
                 </figcaption>
             </figure>
             <a href="single-video-v1.html" class="hover-posts">
-                <span><i class="fa fa-play"></i>Xem Video</span>
+                <span><i class="fa fa-play"></i>Watch Video</span>
             </a>
         </div>
     </div>
@@ -130,7 +130,7 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">Tất Cả Video  : <span>1,862 Video được đăng</span></p>
+                            <p class="pull-left">All Videos : <span>1,862 Videos posted</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
                                 <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>
@@ -143,9 +143,9 @@
                                     <div class="item large-4 medium-6 columns grid-medium">
                                         <div class="post thumb-border">
                                             <div class="post-thumb">
-                                                <img src="{{theme('images/video-thumbnail/1.jpg')}}" alt="new video">
-                                                <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                <img src="{{theme('images/video-thumbnail/hai-tran-thanh.jpg')}}" alt="new video">
+                                                <a href="https://www.youtube.com/watch?v=aSlZMXBGr7g" class="hover-posts">
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -161,7 +161,7 @@
                                                 </div>
                                             </div>
                                             <div class="post-des">
-                                                <h6><a href="single-video-v2.html">There are many variations of passage.</a></h6>
+                                                <h6><a href="https://www.youtube.com/watch?v=aSlZMXBGr7g">Hài kịch: Tô Ánh Nguyệt Remix</a></h6>
                                                 <div class="post-stats clearfix">
                                                     <p class="pull-left">
                                                         <i class="fa fa-user"></i>
@@ -190,7 +190,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/7.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -236,7 +236,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/13.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -278,7 +278,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/14.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -323,7 +323,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/6.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -365,7 +365,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/5.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -410,7 +410,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/4.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -452,7 +452,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/3.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -494,7 +494,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/10.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -536,7 +536,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/9.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -581,7 +581,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/11.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -626,7 +626,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/12.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -672,7 +672,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/1.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -717,7 +717,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/7.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -763,7 +763,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/14.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -809,7 +809,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/5.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -854,7 +854,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/9.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
@@ -899,7 +899,7 @@
                                             <div class="post-thumb">
                                                 <img src="{{theme('images/video-thumbnail/11.jpg')}}" alt="new video">
                                                 <a href="single-video-v2.html" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                    <span><i class="fa fa-play"></i>Watch Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">

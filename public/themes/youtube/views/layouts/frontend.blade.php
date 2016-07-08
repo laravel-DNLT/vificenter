@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeTube video</title>
+    <title>BeTube video | @yield('title')</title>
     <link rel="stylesheet" href="{{theme('css/app.css')}}">
     <link rel="stylesheet" href="{{theme('css/theme.css')}}">
     <link rel="stylesheet" href="{{theme('css/font-awesome.min.css')}}">
@@ -60,7 +60,7 @@
                 <li>
                     <a href="#">features</a>
                     <ul class="submenu menu vertical" data-submenu data-animate="slide-in-down slide-out-up">
-                        <li><a href="404.html">404 Page</a></li>
+                        <li><a href="404.html">404 Pages</a></li>
                         <li><a href="archives.html">Archives</a></li>
                         <li><a href="login.html">login</a></li>
                         <li><a href="login-forgot-pass.html">Forgot Password</a></li>

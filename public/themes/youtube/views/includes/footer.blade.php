@@ -4,7 +4,7 @@
         <div class="large-3 medium-6 columns">
             <div class="widgetBox">
                 <div class="widgetTitle">
-                    <h5>About Betube</h5>
+                    <h5>Về Chúng Tôi</h5>
                 </div>
                 <div class="textwidget">
                     Betube video wordpress theme lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s book.
@@ -14,13 +14,13 @@
         <div class="large-3 medium-6 columns">
             <div class="widgetBox">
                 <div class="widgetTitle">
-                    <h5>Recent Videos</h5>
+                    <h5>Video Gần Đây</h5>
                 </div>
                 <div class="widgetContent">
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "images/recent1.png" alt="recent">
+                                <img src= "{{ theme('images/recent1.png') }}" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
@@ -36,7 +36,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "images/video-thumbnail/1.jpg" alt="recent">
+                                <img src= "{{ theme('images/video-thumbnail/1.jpg') }}" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
@@ -52,7 +52,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "images/recent3.png" alt="recent">
+                                <img src= "{{ theme('images/recent3.png') }}" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
@@ -77,41 +77,41 @@
                     <a href="#">3D Videos</a>
                     <a href="#">Videos</a>
                     <a href="#">HD</a>
-                    <a href="#">Movies</a>
-                    <a href="#">Sports</a>
+                    <a href="#">Phim</a>
+                    <a href="#">Thể Thao</a>
                     <a href="#">3D</a>
-                    <a href="#">Movies</a>
-                    <a href="#">Animation</a>
+                    <a href="#">Phim</a>
+                    <a href="#">Ảnh Động</a>
                     <a href="#">HD</a>
-                    <a href="#">Music</a>
-                    <a href="#">Recreation</a>
+                    <a href="#">Nhạc</a>
+                    <a href="#">Giải Trí</a>
                 </div>
             </div>
         </div>
         <div class="large-3 medium-6 columns">
             <div class="widgetBox">
                 <div class="widgetTitle">
-                    <h5>Subscribe Now</h5>
+                    <h5>Đăng Ký Ngay</h5>
                 </div>
                 <div class="widgetContent">
                     <form data-abide novalidate method="post">
-                        <p>Subscribe to get exclusive videos</p>
+                        <p>Đăng ký để nhận video bản quyền</p>
                         <div class="input">
-                            <input type="text" placeholder="Enter your full Name" required>
-                                        <span class="form-error">
-                                            Yo, you had better fill this out, it's required.
-                                        </span>
+                            <input type="text" placeholder="Nhập Tên " required>
+                            <span class="form-error">
+                                Yo, you had better fill this out, it's required.
+                            </span>
                         </div>
                         <div class="input">
-                            <input type="email" id="email" placeholder="Enter your email addres" required >
-                                        <span class="form-error">
-                                          I'm required!
-                                        </span>
+                            <input type="email" id="email" placeholder="Nhập Địa Chỉ Email" required >
+                            <span class="form-error">
+                              Email đã tồn tại!
+                            </span>
                         </div>
-                        <button class="button" type="submit" value="Submit">Sign up Now</button>
+                        <button class="button" type="submit" value="Submit">Đăng Ký Ngay</button>
                     </form>
                     <div class="social-links">
-                        <h5>We’re a Social Bunch</h5>
+                        <h5>Mạng Xã hội</h5>
                         <a class="secondary-button" href="#"><i class="fa fa-facebook"></i></a>
                         <a class="secondary-button" href="#"><i class="fa fa-twitter"></i></a>
                         <a class="secondary-button" href="#"><i class="fa fa-google-plus"></i></a>
@@ -129,9 +129,12 @@
 </footer><!-- footer -->
 <div id="footer-bottom">
     <div class="logo text-center">
-        <img src="images/footerlogo.png" alt="footer logo">
+        <div class="logo">
+            <img src="{{theme('images/logo.png')}}" alt="footer logo" width="100px" height="auto">
+        </div>
     </div>
     <div class="btm-footer-text text-center">
-        <p>2016 © Betube video wordpress theme.</p>
+        <p>Website tổng hợp Clip Hài Việt Nam. Nguồn: Youtube.com</p>
+        <p>Chúng tôi không chịu trách nhiệm về bản quuyền</p>
     </div>
 </div>

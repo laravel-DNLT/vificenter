@@ -16,6 +16,7 @@
     <!-- NProgress -->
     <link href="{{admin('vendors/nprogress/nprogress.css')}}" rel="stylesheet">
     <!-- Animate.css -->
+    <link href="https://colorlib.com/polygon/gentelella/css/animate.min.css')}}" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="{{admin('build/css/custom.min.css')}}" rel="stylesheet">
@@ -23,19 +24,19 @@
 
 <body class="login">
 <div>
-
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
 
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                    <h1>Login Form</h1>
                     {{ csrf_field() }}
 
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
 
                             @if ($errors->has('email'))
@@ -49,7 +50,7 @@
                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                         <label for="password" class="col-md-4 control-label">Password</label>
 
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <input id="password" type="password" class="form-control" name="password">
 
                             @if ($errors->has('password'))
@@ -79,16 +80,44 @@
                             <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                         </div>
                     </div>
-                    <div>
-                        <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                        <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-                    </div>
                 </form>
             </section>
         </div>
 
+        <div id="register" class="animate form registration_form">
+            <section class="login_content">
+                <form>
+                    <h1>Create Account</h1>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Username" required="" />
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" placeholder="Email" required="" />
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="Password" required="" />
+                    </div>
+                    <div>
+                        <a class="btn btn-default submit" href="index.html">Submit</a>
+                    </div>
 
+                    <div class="clearfix"></div>
 
+                    <div class="separator">
+                        <p class="change_link">Already a member ?
+                            <a href="#signin" class="to_register"> Log in </a>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <br />
+
+                        <div>
+                            <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
+                            <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
         </div>
     </div>
 </div>

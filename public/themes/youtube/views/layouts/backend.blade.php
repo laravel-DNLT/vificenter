@@ -193,9 +193,9 @@
 <!-- NProgress -->
 <script src="{{admin('vendors/nprogress/nprogress.js')}}"></script>
 <!-- Chart.js')}} -->
-<script src="{{admin('vendors/Chart.js')}}/dist/Chart.min.js')}}"></script>
+<script src="{{admin('vendors/Chart.js/dist/Chart.min.js')}}"></script>
 <!-- gauge.js')}} -->
-<script src="{{admin('vendors/gauge.js')}}/dist/gauge.min.js')}}"></script>
+<script src="{{admin('vendors/gauge.js/dist/gauge.min.js')}}"></script>
 <!-- bootstrap-progressbar -->
 <script src="{{admin('vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
 <!-- iCheck -->
@@ -222,7 +222,7 @@
 <script src="{{admin('js/datepicker/daterangepicker.js')}}"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="../build/js/custom.min.js')}}"></script>
+<script src="{{admin('js/custom.min.js')}}"></script>
 
 <!-- Flot -->
 <script>

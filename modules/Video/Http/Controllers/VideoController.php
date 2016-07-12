@@ -6,7 +6,7 @@ class VideoController extends Controller {
 	
 	public function index()
 	{
-		return view('video::index');
+		return view('video.watch');
 	}
 	
 }

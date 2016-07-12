@@ -41,7 +41,7 @@
                         <div class="media-object-section">
                             <div class="author-img-sec">
                                 <div class="thumbnail author-single-post">
-                                    <a href="#"><img src= "images/post-author-post.png" alt="post"></a>
+                                    <a href="#"><img src="{{theme('images/post-author-post.png')}}" alt="post"></a>
                                 </div>
                                 <p class="text-center"><a href="#">Joseph John</a></p>
                             </div>
@@ -165,7 +165,7 @@
                         <div class="item large-4 columns end group-item-grid-default">
                             <div class="post thumb-border">
                                 <div class="post-thumb">
-                                    <img src="images/landing/landing-small1.png" alt="landing">
+                                    <img src="{{theme('images/landing/landing-small1.png')}}" alt="landing">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -211,7 +211,7 @@
                         <div class="item large-4 columns end group-item-grid-default">
                             <div class="post thumb-border">
                                 <div class="post-thumb">
-                                    <img src="images/landing/landing-small2.png" alt="landing">
+                                    <img src="{{theme('images/landing/landing-small2.png')}}" alt="landing">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -256,53 +256,7 @@
                         <div class="item large-4 columns end group-item-grid-default">
                             <div class="post thumb-border">
                                 <div class="post-thumb">
-                                    <img src="images/landing/landing-small3.png" alt="landing">
-                                    <a href="#" class="hover-posts">
-                                        <span><i class="fa fa-play"></i>Watch Video</span>
-                                    </a>
-                                    <div class="video-stats clearfix">
-                                        <div class="thumb-stats pull-left">
-                                            <h6>HD</h6>
-                                        </div>
-                                        <div class="thumb-stats pull-left">
-                                            <i class="fa fa-heart"></i>
-                                            <span>506</span>
-                                        </div>
-                                        <div class="thumb-stats pull-right">
-                                            <span>05:56</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-des">
-                                    <h6><a href="#">There are many variations of passage.</a></h6>
-                                    <div class="post-stats clearfix">
-                                        <p class="pull-left">
-                                            <i class="fa fa-user"></i>
-                                            <span><a href="#">admin</a></span>
-                                        </p>
-                                        <p class="pull-left">
-                                            <i class="fa fa-clock-o"></i>
-                                            <span>5 January 16</span>
-                                        </p>
-                                        <p class="pull-left">
-                                            <i class="fa fa-eye"></i>
-                                            <span>1,862K</span>
-                                        </p>
-                                    </div>
-                                    <div class="post-summary">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                    </div>
-                                    <div class="post-button">
-                                        <a href="#" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item large-4 columns end group-item-grid-default">
-                            <div class="post thumb-border">
-                                <div class="post-thumb">
-                                    <img src="images/widget-most2.png" alt="landing">
+                                    <img src="{{theme('images/landing/landing-small3.png')}}" alt="landing">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -348,7 +302,7 @@
                         <div class="item large-4 columns end group-item-grid-default">
                             <div class="post thumb-border">
                                 <div class="post-thumb">
-                                    <img src="images/slider-carousel4.png" alt="landing">
+                                    <img src="{{theme('images/widget-most2.png')}}" alt="landing">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -394,7 +348,53 @@
                         <div class="item large-4 columns end group-item-grid-default">
                             <div class="post thumb-border">
                                 <div class="post-thumb">
-                                    <img src="images/video-thumbnail/1.jpg" alt="landing">
+                                    <img src="{{theme('images/slider-carousel4.png')}}" alt="landing">
+                                    <a href="#" class="hover-posts">
+                                        <span><i class="fa fa-play"></i>Watch Video</span>
+                                    </a>
+                                    <div class="video-stats clearfix">
+                                        <div class="thumb-stats pull-left">
+                                            <h6>HD</h6>
+                                        </div>
+                                        <div class="thumb-stats pull-left">
+                                            <i class="fa fa-heart"></i>
+                                            <span>506</span>
+                                        </div>
+                                        <div class="thumb-stats pull-right">
+                                            <span>05:56</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-des">
+                                    <h6><a href="#">There are many variations of passage.</a></h6>
+                                    <div class="post-stats clearfix">
+                                        <p class="pull-left">
+                                            <i class="fa fa-user"></i>
+                                            <span><a href="#">admin</a></span>
+                                        </p>
+                                        <p class="pull-left">
+                                            <i class="fa fa-clock-o"></i>
+                                            <span>5 January 16</span>
+                                        </p>
+                                        <p class="pull-left">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,862K</span>
+                                        </p>
+                                    </div>
+                                    <div class="post-summary">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                    </div>
+                                    <div class="post-button">
+                                        <a href="#" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item large-4 columns end group-item-grid-default">
+                            <div class="post thumb-border">
+                                <div class="post-thumb">
+                                    <img src="{{theme('images/video-thumbnail/1.jpg')}}" alt="landing">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -459,7 +459,7 @@
                         <div class="media-object stack-for-small">
                             <div class="media-object-section comment-img text-center">
                                 <div class="comment-box-img">
-                                    <img src= "images/post-author-post.png" alt="comment">
+                                    <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                 </div>
                                 <h6><a href="#">Joseph John</a></h6>
                             </div>
@@ -481,7 +481,7 @@
                         <div class="media-object stack-for-small">
                             <div class="media-object-section comment-img text-center">
                                 <div class="comment-box-img">
-                                    <img src= "images/post-author-post.png" alt="comment">
+                                    <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                 </div>
                             </div>
                             <div class="media-object-section comment-desc">
@@ -502,7 +502,7 @@
                                 <div class="media-object stack-for-small reply-comment">
                                     <div class="media-object-section comment-img text-center">
                                         <div class="comment-box-img">
-                                            <img src= "images/post-author-post.png" alt="comment">
+                                            <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                         </div>
                                     </div>
                                     <div class="media-object-section comment-desc">
@@ -525,7 +525,7 @@
                                 <div class="media-object stack-for-small reply-comment">
                                     <div class="media-object-section comment-img text-center">
                                         <div class="comment-box-img">
-                                            <img src= "images/post-author-post.png" alt="comment">
+                                            <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                         </div>
                                     </div>
                                     <div class="media-object-section comment-desc">
@@ -551,7 +551,7 @@
                         <div class="media-object stack-for-small">
                             <div class="media-object-section comment-img text-center">
                                 <div class="comment-box-img">
-                                    <img src= "images/post-author-post.png" alt="comment">
+                                    <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                 </div>
                             </div>
                             <div class="media-object-section comment-desc">
@@ -574,7 +574,7 @@
                         <div class="media-object stack-for-small">
                             <div class="media-object-section comment-img text-center">
                                 <div class="comment-box-img">
-                                    <img src= "images/post-author-post.png" alt="comment">
+                                    <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                 </div>
                             </div>
                             <div class="media-object-section comment-desc">
@@ -594,7 +594,7 @@
                                 <div class="media-object stack-for-small reply-comment">
                                     <div class="media-object-section comment-img text-center">
                                         <div class="comment-box-img">
-                                            <img src= "images/post-author-post.png" alt="comment">
+                                            <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                         </div>
                                     </div>
                                     <div class="media-object-section comment-desc">
@@ -614,7 +614,7 @@
                                         <div class="media-object stack-for-small reply-comment">
                                             <div class="media-object-section comment-img text-center">
                                                 <div class="comment-box-img">
-                                                    <img src= "images/post-author-post.png" alt="comment">
+                                                    <img src="{{theme('images/post-author-post.png')}}" alt="comment">
                                                 </div>
                                             </div>
                                             <div class="media-object-section comment-desc">
@@ -647,22 +647,16 @@
         <aside class="secBg sidebar">
             <div class="row">
                 <!-- search Widget -->
+
                 <div class="large-12 medium-7 medium-centered columns">
                     <div class="widgetBox">
-                        <div class="widgetTitle">
-                            <h5>Search Videos</h5>
-                        </div>
-                        <form id="searchform" method="get" role="search">
-                            <div class="input-group">
-                                <input class="input-group-field" type="text" placeholder="Enter your keyword">
-                                <div class="input-group-button">
-                                    <input type="submit" class="button" value="Submit">
-                                </div>
+                        <div class="widgetContent">
+                            <div class="advBanner text-center">
+                                <a href="#"><img src="{{theme('images/sideradv.png')}}" alt="sidebar adv"></a>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div><!-- End search Widget -->
-
+                </div><!-- end ad banner widget -->
                 <!-- most view Widget -->
                 <div class="large-12 medium-7 medium-centered columns">
                     <div class="widgetBox">
@@ -672,7 +666,7 @@
                         <div class="widgetContent">
                             <div class="video-box thumb-border">
                                 <div class="video-img-thumb">
-                                    <img src="images/video-thumbnail/7.jpg" alt="most viewed videos">
+                                    <img src="{{theme('images/video-thumbnail/7.jpg')}}" alt="most viewed videos">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -688,7 +682,7 @@
                             </div>
                             <div class="video-box thumb-border">
                                 <div class="video-img-thumb">
-                                    <img src="images/widget-most1.png" alt="most viewed videos">
+                                    <img src="{{theme('images/widget-most1.png')}}" alt="most viewed videos">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -704,7 +698,7 @@
                             </div>
                             <div class="video-box thumb-border">
                                 <div class="video-img-thumb">
-                                    <img src="images/widget-most2.png" alt="most viewed videos">
+                                    <img src="{{theme('images/widget-most2.png')}}" alt="most viewed videos">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -720,7 +714,7 @@
                             </div>
                             <div class="video-box thumb-border">
                                 <div class="video-img-thumb">
-                                    <img src="images/widget-most3.png" alt="most viewed videos">
+                                    <img src="{{theme('images/widget-most3.png')}}" alt="most viewed videos">
                                     <a href="#" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Watch Video</span>
                                     </a>
@@ -737,7 +731,21 @@
                         </div>
                     </div>
                 </div><!-- end most view Widget -->
-
+                <div class="large-12 medium-7 medium-centered columns">
+                    <div class="widgetBox">
+                        <div class="widgetTitle">
+                            <h5>Search Videos</h5>
+                        </div>
+                        <form id="searchform" method="get" role="search">
+                            <div class="input-group">
+                                <input class="input-group-field" type="text" placeholder="Enter your keyword">
+                                <div class="input-group-button">
+                                    <input type="submit" class="button" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- End search Widget -->
                 <!-- categories -->
                 <div class="large-12 medium-7 medium-centered columns">
                     <div class="widgetBox clearfix">
@@ -805,18 +813,7 @@
                 </div><!-- End social Fans Widget -->
 
                 <!-- ad banner widget -->
-                <div class="large-12 medium-7 medium-centered columns">
-                    <div class="widgetBox">
-                        <div class="widgetTitle">
-                            <h5>Recent post videos</h5>
-                        </div>
-                        <div class="widgetContent">
-                            <div class="advBanner text-center">
-                                <a href="#"><img src="images/sideradv.png" alt="sidebar adv"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end ad banner widget -->
+
 
                 <!-- Recent post videos -->
                 <div class="large-12 medium-7 medium-centered columns">
@@ -828,7 +825,7 @@
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
                                     <div class="recent-img">
-                                        <img src= "images/category/category4.png" alt="recent">
+                                        <img src="{{theme('images/category/category4.png')}}" alt="recent">
                                         <a href="#" class="hover-posts">
                                             <span><i class="fa fa-play"></i></span>
                                         </a>
@@ -844,7 +841,7 @@
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
                                     <div class="recent-img">
-                                        <img src= "images/category/category2.png" alt="recent">
+                                        <img src="{{theme('images/category/category2.png')}}" alt="recent">
                                         <a href="#" class="hover-posts">
                                             <span><i class="fa fa-play"></i></span>
                                         </a>
@@ -860,7 +857,7 @@
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
                                     <div class="recent-img">
-                                        <img src= "images/sidebar-recent1.png" alt="recent">
+                                        <img src="{{theme('images/sidebar-recent1.png')}}" alt="recent">
                                         <a href="#" class="hover-posts">
                                             <span><i class="fa fa-play"></i></span>
                                         </a>
@@ -876,7 +873,7 @@
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
                                     <div class="recent-img">
-                                        <img src= "images/sidebar-recent2.png" alt="recent">
+                                        <img src="{{theme('images/sidebar-recent2.png')}}" alt="recent">
                                         <a href="#" class="hover-posts">
                                             <span><i class="fa fa-play"></i></span>
                                         </a>

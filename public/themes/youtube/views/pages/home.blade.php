@@ -10,12 +10,12 @@
                     <div class="thumb-slider">
                         <div class="main-image">
                             <div class="image 1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/64FoFqx4W8c" allowfullscreen></iframe>
                             </div>
                             <div class="image 2">
-                                <img src="{{theme('images/vertical/2.png')}}" alt="imaga">
+                                <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">
                                 <a href="single-video-v1.html" class="hover-posts">
-                                    <span><i class="fa fa-play"></i>Watch Video</span>
+                                    <span><i class="fa fa-play"></i>Xem thêm</span>
                                 </a>
                             </div>
                             <div class="image 3">
@@ -34,7 +34,7 @@
                         <div class="thumbs">
                             <div class="thumbnails">
                                 <div class="ver-thumbnail" id="1">
-                                    <img src="{{theme('images/vertical/1.png')}}" alt="imaga">
+                                    <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">
                                     <div class="item-title">
                                         <span>Technology</span>
                                         <h6>The standard chunk of Lorem Ipsum used since.</h6>

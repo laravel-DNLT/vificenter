@@ -1612,7 +1612,8 @@ footer {
       background: #fff; }
       .sidebar .widgetBox .widgetContent .video-box .video-img-thumb {
         border-bottom: 1px solid #ececec;
-        height: 190px;
+        width: 40%;
+        float: left;
         position: relative; }
         .sidebar .widgetBox .widgetContent .video-box .video-img-thumb img {
           width: 100%;
@@ -1625,7 +1626,10 @@ footer {
           .sidebar .widgetBox .widgetContent .video-box .video-img-thumb .hover-posts span i {
             font-size: 18px; }
       .sidebar .widgetBox .widgetContent .video-box .video-box-content {
-        padding: 15px 0 0 10px; }
+        padding: 0 0 0 10px; }
+.sidebar .widgetBox .widgetContent .video-box .video-box-content p{
+  margin-bottom: 0;
+}
         .sidebar .widgetBox .widgetContent .video-box .video-box-content h6 a {
           font-size: 13px;
           font-weight: normal;
@@ -1637,7 +1641,7 @@ footer {
           font-size: 11px;
           color: #aaaaaa;
           display: inline-block;
-          margin-right: 15px; }
+           }
           .sidebar .widgetBox .widgetContent .video-box .video-box-content p span i {
             display: inline-block;
             font-size: 11px;

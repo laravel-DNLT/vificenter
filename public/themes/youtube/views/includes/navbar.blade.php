@@ -13,18 +13,28 @@
                         <img src="{{theme('images/header-top-img.png')}}" alt="betube">
                     </div>
                 </div>
-                <div class="large-3 columns">
-                    <div class="search-btns float-right">
-                        <ul class="menu">
-                            <li class="upl-btn">
-                                <a href="submit-post.html">Tải video lên</a>
-                            </li>
-                            <li class="login">
-                                <a href="login.html">Đăng Nhập/Đăng Ký</a>
-                            </li>
-                        </ul>
+
+                    <div class="large-3 columns">
+                        <div class="search-btns float-right">
+                            <ul class="menu">
+                                @if (Auth::guest())
+                                    <li class="upl-btn">
+                                        <a href="submit-post.html">Tải video lên</a>
+                                    </li>
+                                    <li class="login">
+                                        <a href="login.html">Đăng Nhập/Đăng Ký</a>
+                                    </li>
+                                @else
+                                    <li class="upl-btn">
+                                        <a href="submit-post.html">Đăng Nhập</a>
+                                    </li>
+                                    <li class="login">
+                                        <a href="login.html">Đăng Ký</a>
+                                    </li>
+                                @endif
+                            </ul>
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
         <nav class="sticky-container navFull-v2 navfull-v2-light" data-sticky-container>

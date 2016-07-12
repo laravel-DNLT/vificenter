@@ -12,57 +12,37 @@
                             <div class="image 1">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/64FoFqx4W8c" allowfullscreen></iframe>
                             </div>
-                            <div class="image 2">
-                                <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">
-                                <a href="single-video-v1.html" class="hover-posts">
-                                    <span><i class="fa fa-play"></i>Xem thêm</span>
-                                </a>
-                            </div>
-                            <div class="image 3">
-                                <img src="{{theme('images/vertical/3.png')}}" alt="imaga">
-                                <a href="single-video-v1.html" class="hover-posts">
-                                    <span><i class="fa fa-play"></i>Watch Video</span>
-                                </a>
-                            </div>
-                            <div class="image 4">
-                                <img src="{{theme('images/vertical/4.png')}}" alt="imaga">
-                                <a href="single-video-v1.html" class="hover-posts">
-                                    <span><i class="fa fa-play"></i>Watch Video</span>
-                                </a>
-                            </div>
+                            {{--<div class="image 2">--}}
+                                {{--<img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">--}}
+                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
+                                    {{--<span><i class="fa fa-play"></i>Xem thêm</span>--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="image 3">--}}
+                                {{--<img src="{{theme('images/vertical/3.png')}}" alt="imaga">--}}
+                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
+                                    {{--<span><i class="fa fa-play"></i>Watch Video</span>--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="image 4">--}}
+                                {{--<img src="{{theme('images/vertical/4.png')}}" alt="imaga">--}}
+                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
+                                    {{--<span><i class="fa fa-play"></i>Watch Video</span>--}}
+                                {{--</a>--}}
+                            {{--</div>--}}
                         </div>
                         <div class="thumbs">
                             <div class="thumbnails">
-                                <div class="ver-thumbnail" id="1">
-                                    <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">
+                                @foreach($video as $item)
+                                    <div class="ver-thumbnail" id="1">
+                                    <img src="{{$item->thumbnails}}" alt="imaga">
                                     <div class="item-title">
                                         <span>Technology</span>
-                                        <h6>The standard chunk of Lorem Ipsum used since.</h6>
+                                        <h6>{{$item->title}}</h6>
                                     </div>
                                 </div>
-                                <div class="ver-thumbnail" id="2">
-                                    <img src="{{theme('images/vertical/2.png')}}" alt="imaga">
-                                    <div class="item-title">
-                                        <span>Technology</span>
-                                        <h6>The standard chunk of Lorem Ipsum used since.</h6>
-                                    </div>
-                                </div>
-                                <div class="ver-thumbnail" id="3">
-                                    <img src="{{theme('images/vertical/3.png')}}" alt="imaga">
-                                    <div class="item-title">
-                                        <span>Technology</span>
-                                        <h6>The standard chunk of Lorem Ipsum used since.</h6>
-                                    </div>
-                                </div>
-                                <div class="ver-thumbnail" id="4">
-                                    <img src="{{theme('images/vertical/4.png')}}" alt="imaga">
-                                    <div class="item-title">
-                                        <span>Technology</span>
-                                        <h6>The standard chunk of Lorem Ipsum used since.</h6>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
-
                             <a class="up" href="javascript:void(0)"><i class="fa fa-angle-up"></i></a>
                             <a class="down" href="javascript:void(0)"><i class="fa fa-angle-down"></i></a>
                         </div>

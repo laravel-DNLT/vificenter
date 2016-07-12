@@ -27,262 +27,129 @@
                     <div class="widgetContent">
                         <ul class="accordion" data-accordion>
                             <li class="accordion-item is-active" data-accordion-item>
-                                <a href="#" class="accordion-title">Giải Trí</a>
+                                <a href="#" class="accordion-title">Game Show</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Ca Nhạc <span>(8)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Ảnh Động <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Kịch <span>(5)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Ca Nhạc <span>(8)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Ảnh Động <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Kịch <span>(5)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Công Nghệ</a>
+                                <a href="#" class="accordion-title">Hoài Linh</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Thời Trang &amp; Làm Đẹp</a>
+                                <a href="#" class="accordion-title">Trường Giang</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Thể Thao</a>
+                                <a href="#" class="accordion-title">Trấn Thành</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Automotive</a>
+                                <a href="#" class="accordion-title">Haha Tv</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Ẩm Thực</a>
+                                <a href="#" class="accordion-title">Fap Tv</a>
                                 <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Xã Hội</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Thiên Nhiên</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Transportationy</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Địa Danh</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Du Lịch</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Động Vật</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Lịch Sử &amp; Kiến Trúc</a>
-                                <div class="accordion-content" data-tab-content>
-                                    <ul>
-                                        <li class="clearfix">
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim <span>(10)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Trailers <span>(3)</span></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-play-circle-o"></i>
-                                            <a href="#">Phim Hài <span>(6)</span></a>
-                                        </li>
-                                    </ul>
+                                    {{--<ul>--}}
+                                        {{--<li class="clearfix">--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim <span>(10)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Trailers <span>(3)</span></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li>--}}
+                                            {{--<i class="fa fa-play-circle-o"></i>--}}
+                                            {{--<a href="#">Phim Hài <span>(6)</span></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                             </li>
                         </ul>

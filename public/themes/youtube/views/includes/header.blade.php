@@ -14,6 +14,9 @@
                         <li>
                             <a href="{{ url('/gioi-thieu') }}"><i class="fa fa-user"></i>Giới thiệu</a>
                         </li>
+                        <li>
+                            <a href="{{ url('/lien-he') }}"><i class="fa fa-envelope"></i>Liên Hệ</a>
+                        </li>
                     </ul>
                 </div>
             </div>

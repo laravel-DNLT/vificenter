@@ -16,19 +16,11 @@ Route::group(['middleware' => 'web','namespace' => 'Modules\Core\Http\Controller
 		Route::get('/fap-tv', 'CoreController@faptv');
 		Route::get('/tat-ca-video', 'CoreController@allvideo');
 	});
-	Route::get('/danh-muc', function() {
-		return view('video.categories');
-	});
+	Route::get('/danh-muc', 'CoreController@category');
 	Route::get('/gioi-thieu', function() {
 		return view('pages.about');
 	});
 	Route::get('/lien-he', function() {
 		return view('pages.contact');
-	});
-	Route::get('/blog', function() {
-		return view('pages.blog');
-	});
-	Route::get('/blog/single-blog', function() {
-		return view('pages.single-blog');
 	});
 });

@@ -1,6 +1,8 @@
 <?php namespace Modules\Core\Http\Controllers;
 
 use Alaouy\Youtube\Youtube;
+use Carbon\CarbonInterval;
+use Modules\Video\Entities\Video;
 use Pingpong\Modules\Routing\Controller;
 
 class CoreController extends Controller {
@@ -8,14 +10,18 @@ class CoreController extends Controller {
 	public $youtube;
 	public function index()
 	{
-//		$TEST_API_KEY = 'AIzaSyDDefsgXEZu57wYgABF7xEURClu4UAzyB8';
-//		$this->youtube = new Youtube($TEST_API_KEY);
-//		$vID = ['aSlZMXBGr7g', 'YCsfuCcsQ1Y','FU5X-MwL7hc','y6xlof32F94','lLO2-XaO9Xc','64FoFqx4W8c','EDaD0xb_wvI','m6Z2YoxwBq8','pd-Syinsrpk','OvtlVBp5eaw'];
-//		$response = $this->youtube->getVideoInfo($vID);
-
-//		return view('pages.home',['response' => $response],['vID' => $vID]);
-		return view('pages.home');
+		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
+		$this->youtube = new Youtube($TEST_API_KEY);
+		$video = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->get();
+		foreach($video as $item) {
+			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+		return view('pages.home',['video' => $video]);
 	}
+
 	public function about()
 	{
 		return view('pages.about');
@@ -80,6 +86,46 @@ class CoreController extends Controller {
 		return view('video.fap-tv',['response' => $response],['vID' => $vID]);
 	}
 	public function allvideo() {
-		return view('video.all-video');
+		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
+		$this->youtube = new Youtube($TEST_API_KEY);
+		$all_video = Video::all();
+		foreach($all_video as $item) {
+			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+
+		$all = Video::paginate(2);
+		foreach($all as $item) {
+			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+		return view('video.all-video',['all' => $all], ['all_video' => $all_video]);
 	}
+	
+	public function category() {
+		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
+		$this->youtube = new Youtube($TEST_API_KEY);
+		$cate = Video::all();
+		foreach($cate as $item) {
+			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+
+		$cates = Video::paginate(2);
+		foreach($cates as $item) {
+			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+		return view('pages.categories', ['cate' => $cate], ['cates' => $cates]);
+	}
+
+
 }

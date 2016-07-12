@@ -26,6 +26,8 @@
 
     <!-- Custom Theme Style -->
     <link href="{{admin('build/css/custom.min.css')}}" rel="stylesheet">
+    @yield('style')
+
 </head>
 
 <body class="nav-md">
@@ -75,10 +77,10 @@
                                     <li><a href="form_buttons.html">Form Buttons</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-desktop"></i> Video <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="general_elements.html">General Elements</a></li>
-                                    <li><a href="media_gallery.html">Media Gallery</a></li>
+                                    <li><a href="/admin/video">Danh Sách Video</a></li>
+                                    <li><a href="/admin/video/them">Thêm Video</a></li>
                                     <li><a href="typography.html">Typography</a></li>
                                     <li><a href="icons.html">Icons</a></li>
                                     <li><a href="glyphicons.html">Glyphicons</a></li>
@@ -223,6 +225,7 @@
 
 <!-- Custom Theme Scripts -->
 <script src="{{admin('js/custom.min.js')}}"></script>
+@yield('script')
 
 <!-- Flot -->
 <script>

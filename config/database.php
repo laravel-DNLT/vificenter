@@ -65,6 +65,15 @@ return [
             'strict' => false,
             'engine' => null,
         ],
+        'sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST', 'neuron.database.windows.net'),
+            'database' => env('DB_DATABASE', 'db_quanlydiem'),
+            'username' => env('DB_USERNAME', 'neuron'),
+            'password' => env('DB_PASSWORD', '123Thanhtam!())'),
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',

@@ -1627,7 +1627,10 @@ footer {
           .sidebar .widgetBox .widgetContent .video-box .video-img-thumb .hover-posts span i {
             font-size: 18px; }
       .sidebar .widgetBox .widgetContent .video-box .video-box-content {
-        padding: 0 0 0 10px; }
+        padding: 0 0 0 130px;
+
+        min-height: 105px;
+      }
 .sidebar .widgetBox .widgetContent .video-box .video-box-content p{
   margin-bottom: 0;
 }

@@ -39,10 +39,10 @@ class CoreController extends Controller {
 		return view('pages.contact');
 	}
 
-	public function danhmuc() {
+	public function danhmuc($id) {
 		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
 		$this->youtube = new Youtube($TEST_API_KEY);
-		$danhmuc = Video::all();
+		$danhmuc = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->get();
 		foreach($danhmuc as $item) {
 			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
@@ -50,7 +50,7 @@ class CoreController extends Controller {
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
 
-		$dm = Video::paginate(2);
+		$dm = Video::Paginate(2);
 		foreach($dm as $item) {
 			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
@@ -119,7 +119,7 @@ class CoreController extends Controller {
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
 
-		$all = Video::paginate(2);
+		$all = Video::Paginate(2);
 		foreach($all as $item) {
 			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
@@ -140,7 +140,7 @@ class CoreController extends Controller {
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
 
-		$cates = Video::paginate(2);
+		$cates = Video::Paginate(2);
 		foreach($cates as $item) {
 			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;

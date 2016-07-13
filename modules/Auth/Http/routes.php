@@ -17,5 +17,8 @@ Route::group(['middleware' => 'web', 'prefix' => 'admin', 'namespace' => 'Module
 		Route::get('/', ['as' => 'admin.video.index', 'uses' => 'AuthController@youtube']);
 		Route::get('/them', ['as' => 'admin.video.create', 'uses' => 'AuthController@ThemVideo']);
 		Route::post('/them', ['as' => 'admin.video.create', 'uses' => 'AuthController@postVideo']);
+		Route::get('/sua/{id}',['as' => 'admin.video.edit', 'uses' => 'AuthController@getSuaVideo']);
+		Route::post('/sua/{id}',['as' => 'admin.video.edit', 'uses' => 'AuthController@postSuaVideo']);
+		Route::get('/xoa/{id}','AuthController@xoaVideo');
 	});
 });

@@ -202,8 +202,6 @@
                                 <div class="video-box-content">
                                     <h6><a href="#">{{$item->title}}</a></h6>
                                     <p>
-                                        <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                        <span><i class="fa fa-clock-o"></i>5 January 16</span>
                                         <span><i class="fa fa-eye"></i>1,862K</span>
                                     </p>
                                 </div>

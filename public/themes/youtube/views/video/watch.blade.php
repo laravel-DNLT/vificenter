@@ -150,14 +150,6 @@
                                     <h6><a href="#">{{$item->title}}</a></h6>
                                     <div class="post-stats clearfix">
                                         <p class="pull-left">
-                                            <i class="fa fa-user"></i>
-                                            <span><a href="#">admin</a></span>
-                                        </p>
-                                        <p class="pull-left">
-                                            <i class="fa fa-clock-o"></i>
-                                            <span>5 January 16</span>
-                                        </p>
-                                        <p class="pull-left">
                                             <i class="fa fa-eye"></i>
                                             <span>1,862K</span>
                                         </p>

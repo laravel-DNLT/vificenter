@@ -14,7 +14,7 @@ class CoreController extends Controller {
 		$this->youtube = new Youtube($TEST_API_KEY);
 		$video = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->get();
 		foreach($video as $item) {
-			$item->thumbnails = 'https://img.youtube.com/vi/'.'LJ80zOZWb34'.'/maxresdefault.jpg';
+			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;

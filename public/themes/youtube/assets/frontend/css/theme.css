@@ -1001,7 +1001,7 @@ input[type=checkbox]:checked + .customLabel:before {
 
 .content .post .post-thumb {
   position: relative;
-  height: 190px;
+
   overflow: hidden; }
   .content .post .post-thumb img {
     width: 100%;

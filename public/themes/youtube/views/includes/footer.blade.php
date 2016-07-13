@@ -7,7 +7,7 @@
                     <h5>Về Chúng Tôi</h5>
                 </div>
                 <div class="textwidget">
-                    Betube video wordpress theme lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s book.
+                    HahaTv.com là website tổng hợp clip - video hài nhằm đem lại tiếng cười sảng khoái cho mọi người. Rất đơn giản, chỉ cần vào hahatv.com và cười. Đặc biệt những clip hài, phim hài vào dịp tết nguyên đán của các năm sẽ được chúng tôi update mới nhất! Like video - clip bạn thích! Chỉ cần click like, đã thay lời khen ngợi của bạn đến tác giả và giúp chia sẻ tiếng cười đến hàng trăm người khác. Bình luận video - clip bạn thích! Bình luận của bạn có thể còn gây cười hơn chính bức ảnh đó. Like bình luận bạn thích! Bình luận cũng gây cười, tại sao không like nhỉ?
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
         </div>
     </div>
     <div class="btm-footer-text text-center">
-        <p>Website tổng hợp Clip Hài Việt Nam. Nguồn: Youtube.com</p>
+        <p>Website tổng hợp Clip <a href="/">Hài Việt Nam</a> - Nguồn : Youtube.com </p>
         <p>Chúng tôi không chịu trách nhiệm về bản quuyền</p>
     </div>
 </div>

@@ -30,21 +30,26 @@
                             <th>STT</th>
                             <th>Tên Video</th>
                             <th>URL</th>
-                            <th>Tags</th>
-                            <th>Lượt Xem</th>
-                            <th>Mô Tả</th>
+                            <th>Hiện Trang</th>
+                            <th>sort</th>
+                            <th>Sửa</th>
+                            <th>Xóa</th>
+                            <th><button type="submit" class="btn btn-success" value="">Sort</button></th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($video as $item)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                            <th scope="row">{{$item->id}}</th>
+                            <td>{{$item->title}}</td>
+                            <td>https://www.youtube.com/watch?v={{$item->Url}}</td>
+                            <td>{{$item->public}}</td>
+                            <td>{{$item->sort}}</td>
+                            <td><a href="{{ route('admin.video.edit', $item->id) }}"><i class="glyphicon glyphicon-edit"></i></a></td>
+                            <td><a href="video/xoa/{{$item->id}}"><i class="glyphicon glyphicon-remove" ></i></a></td>
 
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
 

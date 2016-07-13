@@ -51,52 +51,15 @@
                                 <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
                                     <li class="has-submenu active" data-dropdown-menu="example">
                                         <a href="{{ url('/') }}">Home</a>
-                                        {{--<ul id="example" class="submenu menu vertical" data-submenu data-animate="slide-in-down slide-out-up">--}}
-                                            {{--<li><a href="home-v1.html">Home page v1</a></li>--}}
-                                            {{--<li><a href="home-v2.html">Home page v2</a></li>--}}
-                                            {{--<li><a href="home-v3.html">Home page v3</a></li>--}}
-                                            {{--<li><a href="home-v4.html">Home page v4</a></li>--}}
-                                            {{--<li><a href="home-v5.html">Home page v5</a></li>--}}
-                                            {{--<li><a href="home-v6.html">Home page v6</a></li>--}}
-                                            {{--<li><a href="home-v7.html">Home page v7</a></li>--}}
-                                            {{--<li><a href="home-v8.html">Home page v8</a></li>--}}
-                                            {{--<li><a href="home-v9.html">Home page v9</a></li>--}}
-                                            {{--<li><a href="home-v10.html">Home page v10</a></li>--}}
-                                        {{--</ul>--}}
                                     </li>
+                                    <?php
+                                        $menu_level = \Modules\Video\Entities\DanhMuc::where('parent_id',0)->get();
+                                    ?>
+                                    @foreach($menu_level as $item_level)
                                     <li>
-                                        <a href="{{ url('video/game-show') }}">Game show</a>
-                                        {{--<ul class="submenu menu vertical" data-submenu data-animate="slide-in-down slide-out-up">--}}
-                                            {{--<li><a href="404.html">404 Page</a></li>--}}
-                                            {{--<li><a href="archives.html">Archives</a></li>--}}
-                                            {{--<li><a href="login.html">login</a></li>--}}
-                                            {{--<li><a href="login-forgot-pass.html">Forgot Password</a></li>--}}
-                                            {{--<li><a href="login-register.html">Register</a></li>--}}
-                                            {{--<li>--}}
-                                                {{--<a href="#">profile</a>--}}
-                                                {{--<ul class="submenu menu vertical" data-submenu data-animate="slide-in-down slide-out-up">--}}
-                                                    {{--<li><a href="profile-page-v1.html">profile v1</a></li>--}}
-                                                    {{--<li><a href="profile-page-v2.html">profile v2</a></li>--}}
-                                                    {{--<li><a href="profile-about-me.html">Profile About Me</a></li>--}}
-                                                    {{--<li><a href="profile-comments.html">profile comments</a></li>--}}
-                                                    {{--<li><a href="profile-favorite.html">profile favorites</a></li>--}}
-                                                    {{--<li><a href="profile-followers.html">profile followers</a></li>--}}
-                                                    {{--<li><a href="profile-settings.html">profile settings</a></li>--}}
-                                                {{--</ul>--}}
-                                            {{--</li>--}}
-                                            {{--<li><a href="profile-video.html">Author Page</a></li>--}}
-                                            {{--<li><a href="search-results.html">search results</a></li>--}}
-                                            {{--<li><a href="terms-condition.html">Terms &amp; Condition</a></li>--}}
-                                        {{--</ul>--}}
+                                        <a href="{{ url('video/'.$item_level->id.'/'.$item_level->Ten) }}">{{$item_level->Ten}}</a>
                                     </li>
-                                    <li>
-                                        <a href="{{ url('video/truong-giang') }}">Trường Giang</a>
-                                    </li>
-                                    <li><a href="{{ url('video/hoai-linh') }}">Hoài Linh</a></li>
-                                    <li><a href="{{ url('video/tran-thanh') }}">Trấn Thành</a></li>
-                                    <li><a href="{{ url('video/haha-tv') }}">HaHa Tv</a></li>
-                                    <li><a href="{{ url('video/fap-tv') }}">Fap Tv</a></li>
-                                    <li><a href="#">Khác</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                             <div class="top-bar-right search-btn">

@@ -140,23 +140,21 @@
                         <div class="tabs-content" data-tabs-content="newVideos">
                             <div class="tabs-panel is-active" id="new-all">
                                 <div class="row list-group">
-                                    @foreach( $response as $rp)
+                                    @foreach( $danhmuc as $item)
                                     <div class="item large-4 medium-6 columns grid-medium">
                                         <div class="post thumb-border">
                                             <div class="post-thumb">
-                                                <img src="{{$rp->snippet->thumbnails->default->url}}" alt="new video">
-                                                @foreach($vID as $vid)
-                                                <a href="https://www.youtube.com/watch?v={{$vid}}" class="hover-posts">
+                                                <img src="{{$item->thumbnails}}" alt="new video">
+                                                <a href="https://www.youtube.com/watch?v={{$item->Url}}" class="hover-posts">
                                                     <span><i class="fa fa-play"></i>Xem Video</span>
                                                 </a>
-                                                @endforeach
                                                 <div class="video-stats clearfix">
                                                     <div class="thumb-stats pull-left">
                                                         <h6>HD</h6>
                                                     </div>
                                                     <div class="thumb-stats pull-left">
                                                         <i class="fa fa-heart"></i>
-                                                        <span>506</span>
+                                                        <span>{{$item->time}}</span>
                                                     </div>
                                                     {{--<div class="thumb-stats pull-right">--}}
                                                         {{--<span>05:06</span>--}}
@@ -164,7 +162,7 @@
                                                 </div>
                                             </div>
                                             <div class="post-des">
-                                                <h6><a href="https://www.youtube.com/watch?v={{$vid}}">{{ $rp->snippet->title }}</a></h6>
+                                                <h6><a href="https://www.youtube.com/watch?v={{$item->Url}}">{{ $item->title }}</a></h6>
                                                 <div class="post-stats clearfix">
                                                     <p class="pull-left">
                                                         <i class="fa fa-user"></i>
@@ -180,10 +178,10 @@
                                                     </p>
                                                 </div>
                                                 <div class="post-summary">
-                                                    <p>{{ $rp->snippet->description }}</p>
+                                                    <p>{{ $item->des }}</p>
                                                 </div>
                                                 <div class="post-button">
-                                                    <a href="https://www.youtube.com/watch?v={{$vid}}" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                                    <a href="https://www.youtube.com/watch?v={{$item->Url}}" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
                                                 </div>
                                             </div>
                                         </div>

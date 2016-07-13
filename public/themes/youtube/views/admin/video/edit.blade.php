@@ -29,7 +29,7 @@
                     </div>
                     <div class="x_content">
 
-                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="them">
+                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="{{ route('admin.video.edit', $video->id) }}">
                             @if(count($errors) >0)
                                 <div class="alert alert-danger">
                                     @foreach($errors->all() as $error)
@@ -47,7 +47,7 @@
                                 <div class="col-md-9 col-sm-9 col-xs-12">
                                     <select class="form-control col-md-12 col-xs-12" name="danhmuc">
                                         @foreach($danhmuc as $dm)
-                                        <option value="{{$dm->id}}">{{$dm->Ten}}</option>
+                                            <option value="{{$dm->id}}">{{$dm->Ten}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -56,7 +56,7 @@
                                 <label class="control-label col-md-2 col-sm-2 col-xs-12" for="URL">URL
                                 </label>
                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <input type="text"  class="form-control col-md-12 col-xs-12" name="url" value="https://www.youtube.com/watch?v=">
+                                    <input type="text"  class="form-control col-md-12 col-xs-12" name="url" value="https://www.youtube.com/watch?v={{$video->Url}}">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -69,14 +69,14 @@
                             <div class="form-group">
                                 <label for="" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <input type="radio" name="rdo" id="" checked="" value="1"> Public
+                                    <input type="radio" name="rdo" id="" checked=""  value="1"> Public
                                     <input type="radio" name="rdo" id="" value="2"> Private
                                 </div>
                             </div>
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button type="submit" class="btn btn-success">Thêm</button>
+                                    <button type="submit" class="btn btn-success">Sửa</button>
                                     <button type="submit" class="btn btn-primary">Cancel</button>
                                 </div>
                             </div>

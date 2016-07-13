@@ -53,11 +53,11 @@
                                         <a href="{{ url('/') }}">Home</a>
                                     </li>
                                     <?php
-                                        $menu_level = \Modules\Video\Entities\DanhMuc::where('parent_id',0)->get();
+                                        $menu_level = \Modules\Video\Entities\DanhMuc::all();
                                     ?>
                                     @foreach($menu_level as $item_level)
                                     <li>
-                                        <a href="{{ url('video/'.$item_level->id.'/'.$item_level->Ten) }}">{{$item_level->Ten}}</a>
+                                        <a href="{{ url($item_level->id.'/'.$item_level->Ten) }}">{{$item_level->Ten}}</a>
                                     </li>
                                     @endforeach
                                 </ul>

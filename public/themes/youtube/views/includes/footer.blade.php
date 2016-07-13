@@ -28,8 +28,7 @@
                         </div>
                         <div class="media-object-section">
                             <div class="media-content">
-                                <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
+                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
                             </div>
                         </div>
                     </div>
@@ -44,8 +43,7 @@
                         </div>
                         <div class="media-object-section">
                             <div class="media-content">
-                                <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
+                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
                             </div>
                         </div>
                     </div>
@@ -60,8 +58,7 @@
                         </div>
                         <div class="media-object-section">
                             <div class="media-content">
-                                <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
+                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
                             </div>
                         </div>
                     </div>

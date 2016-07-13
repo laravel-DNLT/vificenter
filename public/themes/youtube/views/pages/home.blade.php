@@ -37,7 +37,7 @@
                                     <div class="ver-thumbnail" id="1">
                                     <img src="{{$item->thumbnails}}" alt="imaga">
                                     <div class="item-title">
-                                        <span>Technology</span>
+
                                         <h6>{{$item->title}}</h6>
                                     </div>
                                 </div>
@@ -408,360 +408,53 @@
                     <div class="tabs-content" data-tabs-content="popularVideos">
                         <div class="tabs-panel is-active" id="popular-all">
                             <div class="row list-group">
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hqdefault.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Xem Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
+                                @foreach($video as $item)
+                                    <div class="item large-3 medium-6 columns group-item-grid-default">
+                                        <div class="post thumb-border">
+                                            <div class="post-thumb">
+                                                <img src="{{$item->thumbnails}}" alt="new video">
+                                                <a href="video/{{$item->id}}" class="hover-posts">
+                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                                                </a>
+                                                <div class="video-stats clearfix">
+                                                    <div class="thumb-stats pull-left">
+                                                        <h6>HD</h6>
+                                                    </div>
+                                                    <div class="thumb-stats pull-left">
+                                                        <i class="fa fa-heart"></i>
+                                                        <span>506</span>
+                                                    </div>
+                                                    <div class="thumb-stats pull-right">
+                                                        <span>{{ $item->time}}</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=64FoFqx4W8c">Đấu trường tiếu lâm | Tập 2 Full HD</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5/1/2016</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                            <div class="post-des">
+                                                <h6><a href="video/{{$item->id}}">{{$item->title}}</a></h6>
+                                                <div class="post-stats clearfix">
+                                                    <p class="pull-left">
+                                                        <i class="fa fa-user"></i>
+                                                        <span><a href="#">admin</a></span>
+                                                    </p>
+                                                    <p class="pull-left">
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <span>5/1/2016</span>
+                                                    </p>
+                                                    <p class="pull-left">
+                                                        <i class="fa fa-eye"></i>
+                                                        <span>1,862K</span>
+                                                    </p>
+                                                </div>
+                                                <div class="post-summary">
+                                                    <p>{{$item->des}}</p>
+                                                </div>
+                                                <div class="post-button">
+                                                    <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=EDaD0xb_wvI" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="single-video-v2.html">Chuyến Xe Ngày Tết - Trường Giang </a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=EDaD0xb_wvI" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-hoai-linh.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8">Liveshow NSƯT Hoài Linh 2016 - Phần 2</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-tran-thanh.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=JVUQxd777UY" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=JVUQxd777UY">Hài Trấn Thành Việt Hương 2016</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=JVUQxd777UY" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hqdefault.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Xem Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=64FoFqx4W8c">Đấu trường tiếu lâm | Tập 2 Full HD</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5/1/2016</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=EDaD0xb_wvI" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="single-video-v2.html">Chuyến Xe Ngày Tết - Trường Giang </a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=EDaD0xb_wvI" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-hoai-linh.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8">Liveshow NSƯT Hoài Linh 2016 - Phần 2</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=m6Z2YoxwBq8" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/hai-tran-thanh.jpg')}}" alt="new video">
-                                            <a href="https://www.youtube.com/watch?v=JVUQxd777UY" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="https://www.youtube.com/watch?v=JVUQxd777UY">Hài Trấn Thành Việt Hương 2016</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=JVUQxd777UY" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="tabs-panel" id="popular-hd">

@@ -1408,8 +1408,7 @@ footer {
     margin-bottom: 0; }
     footer .widgetBox .widgetContent .media-object .media-object-section .recent-img {
       overflow: hidden;
-      width: 80px;
-      height: 80px;
+      width:100px;
       position: relative; }
       footer .widgetBox .widgetContent .media-object .media-object-section .recent-img img {
         width: 100%;
@@ -1419,7 +1418,7 @@ footer {
       footer .widgetBox .widgetContent .media-object .media-object-section .recent-img a.hover-posts span i {
         font-size: 18px; }
     footer .widgetBox .widgetContent .media-object .media-object-section .media-content h6 a {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       color: #aaaaaa; }
       footer .widgetBox .widgetContent .media-object .media-object-section .media-content h6 a:hover {

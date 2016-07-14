@@ -342,7 +342,7 @@
                     </div>
                     <!-- movie carousel -->
                     <div id="owl-demo-movie" class="owl-carousel carousel" data-autoplay="true" data-autoplay-timeout="3000" data-autoplay-hover="true" data-car-length="5" data-items="6" data-dots="false" data-loop="true" data-auto-width="true" data-margin="10">
-                        @foreach($video1 as $item)
+                        @foreach($videos as $item)
 
                         <div class="item-movie item thumb-border">
                             <figure class="premium-img">

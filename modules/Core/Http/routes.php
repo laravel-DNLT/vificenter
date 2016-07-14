@@ -16,8 +16,9 @@ Route::group(['middleware' => 'web','namespace' => 'Modules\Core\Http\Controller
 //		Route::get('/fap-tv', 'CoreController@faptv');
 		Route::get('/tat-ca-video', 'CoreController@allvideo');
 	});
-	//Route::get('/{id}/{Ten}','CoreController@danhmuc');
+
 	Route::get('/danh-muc', 'CoreController@category');
+	Route::get('/danh-muc/{id}','CoreController@danhmuc');
 	Route::get('/gioi-thieu', function() {
 		return view('pages.about');
 	});

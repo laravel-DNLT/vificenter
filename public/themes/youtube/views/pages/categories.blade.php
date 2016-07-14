@@ -20,7 +20,7 @@
         <div class="row">
             <div class="heading clearfix">
                 <div class="large-11 columns">
-                    <h4><i class="fa fa-play-circle-o"></i>Các Video Cao Cấp</h4>
+                    <h4><i class="fa fa-play-circle-o"></i>Các Video Nổi Bật</h4>
                 </div>
                 <div class="large-1 columns">
                     <div class="navText show-for-large">

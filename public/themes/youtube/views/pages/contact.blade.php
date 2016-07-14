@@ -25,7 +25,7 @@
                         <div class="medium-6 large-centered medium-centered">
                             <div class="page-heading text-center">
                                 <h3>Liên Hệ</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                <p>HahaTv.com là website tổng hợp clip - video hài nhằm đem lại tiếng cười sảng khoái cho mọi người. Rất đơn giản, chỉ cần vào hahatv.com và cười. Đặc biệt những clip hài, phim hài vào dịp tết nguyên đán của các năm sẽ được chúng tôi update mới nhất! Like video - clip bạn thích! Chỉ cần click like, đã thay lời khen ngợi của bạn đến tác giả và giúp chia sẻ tiếng cười đến hàng trăm người khác. Bình luận video - clip bạn thích! Bình luận của bạn có thể còn gây cười hơn chính bức ảnh đó. Like bình luận bạn thích! Bình luận cũng gây cười, tại sao không like nhỉ?</p>
                             </div>
                         </div>
                     </div>

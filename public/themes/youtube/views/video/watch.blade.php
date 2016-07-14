@@ -158,7 +158,7 @@
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                                     </div>
                                     <div class="post-button">
-                                        <a href="#" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                        <a href="{{url("video/$item->id")}}" class="secondary-button"><i class="fa fa-play-circle"></i>Xem thêm</a>
                                     </div>
                                 </div>
                             </div>
@@ -195,8 +195,8 @@
                             <div class="video-box thumb-border">
                                 <div class="video-img-thumb">
                                     <img src="{{$item->thumbnails}}" alt="most viewed videos">
-                                    <a href="#" class="hover-posts">
-                                        <span><i class="fa fa-play"></i>Watch Video</span>
+                                    <a href="{{url("video/$item->id")}}" class="hover-posts">
+                                        <span><i class="fa fa-play"></i>Xêm chi tiết</span>
                                     </a>
                                 </div>
                                 <div class="video-box-content">

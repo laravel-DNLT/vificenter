@@ -9,32 +9,16 @@
                 <div class="large-12 columns">
                     <div class="thumb-slider">
                         <div class="main-image">
-                            <div class="image 1">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/64FoFqx4W8c" allowfullscreen></iframe>
+                            @foreach($video as $item)
+                            <div class="image {{$item->id}}">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$item->Url}}" allowfullscreen></iframe>
                             </div>
-                            {{--<div class="image 2">--}}
-                                {{--<img src="{{theme('images/video-thumbnail/hai-truong-giang.jpg')}}" alt="imaga">--}}
-                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
-                                    {{--<span><i class="fa fa-play"></i>Xem thêm</span>--}}
-                                {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="image 3">--}}
-                                {{--<img src="{{theme('images/vertical/3.png')}}" alt="imaga">--}}
-                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
-                                    {{--<span><i class="fa fa-play"></i>Watch Video</span>--}}
-                                {{--</a>--}}
-                            {{--</div>--}}
-                            {{--<div class="image 4">--}}
-                                {{--<img src="{{theme('images/vertical/4.png')}}" alt="imaga">--}}
-                                {{--<a href="single-video-v1.html" class="hover-posts">--}}
-                                    {{--<span><i class="fa fa-play"></i>Watch Video</span>--}}
-                                {{--</a>--}}
-                            {{--</div>--}}
+                            @endforeach
                         </div>
                         <div class="thumbs">
                             <div class="thumbnails">
                                 @foreach($video as $item)
-                                    <div class="ver-thumbnail" id="1">
+                                    <div class="ver-thumbnail" id="{{$item->id}}">
                                     <img src="{{$item->thumbnails}}" alt="imaga">
                                     <div class="item-title">
 

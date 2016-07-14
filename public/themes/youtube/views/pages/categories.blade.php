@@ -37,7 +37,7 @@
                     <img src="{{$item->thumbnails}}" alt="carousel">
                     <figcaption>
                         <h5>{{$item->title}}</h5>
-                        <p>Trailer</p>
+
                     </figcaption>
                 </figure>
                 <a href="video/{{$item->id}}" class="hover-posts">

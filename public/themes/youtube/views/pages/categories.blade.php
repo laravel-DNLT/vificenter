@@ -40,7 +40,7 @@
 
                     </figcaption>
                 </figure>
-                <a href="video/{{$item->id}}" class="hover-posts">
+                <a href="/video/{{$item->id}}" class="hover-posts">
                     <span><i class="fa fa-play"></i>Xem Video</span>
                 </a>
             </div>
@@ -104,7 +104,7 @@
                                                 </div>
                                             </div>
                                             <div class="post-des">
-                                                <h6><a href="video/{{$item->id}}">{{$item->title}}</a></h6>
+                                                <h6><a href="/video/{{$item->id}}">{{$item->title}}</a></h6>
                                                 <div class="post-stats clearfix">
                                                     <p class="pull-left">
                                                         <i class="fa fa-user"></i>
@@ -123,7 +123,7 @@
                                                     <p>{{$item->des}}</p>
                                                 </div>
                                                 <div class="post-button">
-                                                    <a href="video/{{$item->id}}" class="secondary-button"><i class="fa fa-play-circle"></i>Xem video</a>
+                                                    <a href="/video/{{$item->id}}" class="secondary-button"><i class="fa fa-play-circle"></i>Xem video</a>
                                                 </div>
                                             </div>
                                         </div>

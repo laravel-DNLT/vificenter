@@ -33,7 +33,7 @@
                         <div class="large-6 columns">
                             <h4>Thông Tin Liên Hệ:</h4>
                             <div class="map">
-                                <img src="{{ theme('images/map.png') }}" alt="map">
+                                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDnDToJSZ_-g8LtvEr3bMhOuTBT_pg25Tg'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://anfahrtsplanerstellen.org'>maps auf homepage einbinden</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=02f224158e76dfad3d8c081d65b467f1c3d1d30b'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(21.0333,105.85000000000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(21.0333,105.85000000000002)});infowindow = new google.maps.InfoWindow({content:'<strong>133 Nguyen Chi Thanh</strong><br><br> Hanoi<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                             </div>
                             <div class="user-contacts">
                                 <div class="row">

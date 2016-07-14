@@ -106,7 +106,7 @@ class AuthController extends Controller
 		 $video = new Video();
 		 $video->idDanhMuc = $request->danhmuc;
 		 $video->Url = $this->youtube->parseVIdFromURL($request->url);
-		 $video->Descriptions = $request->description;
+		 $video->Descriptions = "";
 		 $video->public = $request->rdo;
 		 $video->sort = $request->sort;
 		 $video->save();

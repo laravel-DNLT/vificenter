@@ -1405,7 +1405,7 @@ footer {
     margin: 0;
     text-transform: capitalize; }
   footer .widgetBox .widgetContent .media-object {
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
     footer .widgetBox .widgetContent .media-object .media-object-section .recent-img {
       overflow: hidden;
       width:100px;

@@ -63,7 +63,7 @@ class CoreController extends Controller {
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
 
-		$dm = Video::Paginate(2);
+		$dm = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->get();
 		foreach($dm as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;

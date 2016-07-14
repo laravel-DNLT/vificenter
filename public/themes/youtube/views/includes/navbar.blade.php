@@ -18,12 +18,7 @@
                         <div class="search-btns float-right">
                             <ul class="menu">
                                 @if (Auth::guest())
-                                    <li class="upl-btn">
-                                        <a href="submit-post.html">Đăng Nhập</a>
-                                    </li>
-                                    <li class="login">
-                                        <a href="login.html">Đăng Ký</a>
-                                    </li>
+
                                 @else
                                     <li class="upl-btn">
                                         <a href="submit-post.html">Tải video lên</a>

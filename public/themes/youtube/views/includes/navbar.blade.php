@@ -50,14 +50,14 @@
                             <div class="top-bar-left">
                                 <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
                                     <li class="has-submenu active" data-dropdown-menu="example">
-                                        <a href="{{ url('/') }}">Home</a>
+                                        <a href="{{ url('/') }}">Trang chủ</a>
                                     </li>
                                     <?php
                                         $menu_level = \Modules\Video\Entities\DanhMuc::all();
                                     ?>
                                     @foreach($menu_level as $item_level)
                                     <li>
-                                        <a href="{{ url($item_level->id.'/'.$item_level->Ten) }}">{{$item_level->Ten}}</a>
+                                        <a href="{{ url('danh-muc/'.$item_level->id) }}">{{$item_level->Ten}}</a>
                                     </li>
                                     @endforeach
                                 </ul>

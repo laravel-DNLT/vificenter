@@ -57,7 +57,7 @@ class CoreController extends Controller {
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
-		return view('video.game-show',['dm' => $dm], ['danhmuc' => $danhmuc]);
+		return view('pages.categories', ['cate' => $danhmuc], ['cates' => $dm]);
 		
 	}
 

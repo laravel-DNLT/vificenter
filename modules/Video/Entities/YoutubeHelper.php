@@ -14,8 +14,16 @@ class YoutubeHelper
     public static function getTitle($url){
         $TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
         $youtube = new Youtube($TEST_API_KEY);
-        $title= $youtube->getVideoInfo($url)->snippet->title;
+        $title= YoutubeHelper::trimString($youtube->getVideoInfo($url)->snippet->title);
+
         return $title;
+    }
+    public static function trimString($str){
+
+        if (strlen($str) > 25)
+            $str = substr($str, 0, 50) . '...';
+        return $str;
+
     }
 
 }

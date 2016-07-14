@@ -41,21 +41,21 @@
                                         <div class="contact-stats">
                                             <i class="fa fa-map-marker"></i>
                                             <h6>Địa Chỉ Văn Phòng</h6>
-                                            <p>4088 Station Street Oakland, CA 94612 California, US</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="large-6 medium-6 columns">
                                         <div class="contact-stats">
                                             <i class="fa fa-envelope"></i>
                                             <h6>Địa Chỉ Email</h6>
-                                            <p>4onlinesupport@betube.com <br/> information@betube.com</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <div class="large-6 medium-6 columns">
                                         <div class="contact-stats">
                                             <i class="fa fa-phone"></i>
                                             <h6>Điện Thoại</h6>
-                                            <p><strong>Số Điện Thoại Văn Phòng :</strong> 510-987-2449 <br/> <strong>Số Fax : </strong>510-987-2448 </p>
+                                            <p><strong>Số Điện Thoại Văn Phòng :</strong>  <br/> <strong>Số Fax : </strong> </p>
                                         </div>
                                     </div>
                                     <div class="large-6 medium-6 columns">

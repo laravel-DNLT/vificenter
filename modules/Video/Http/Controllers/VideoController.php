@@ -15,7 +15,7 @@ class VideoController extends Controller {
 		$video = Video::select('id','Url','Descriptions','idDanhMuc')->orderBy('id', 'DESC')->where('id',$id)->first();
 		$video_cate = Video::where('idDanhMuc',$video->idDanhMuc)->get();
 		foreach($video_cate as $item) {
-			$item->thumbnails = $this->youtube->getVideoInfo($item->Url)->snippet->thumbnails->default->url;
+			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
 			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;

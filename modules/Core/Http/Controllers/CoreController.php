@@ -20,7 +20,14 @@ class CoreController extends Controller {
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
-		return view('pages.home',['video' => $video]);
+		$video1 = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->paginate(10);
+		foreach($video as $item) {
+			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
+			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
+			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
+		}
+		return view('pages.home',['video' => $video],['video1'=>$video1]);
 	}
 
 

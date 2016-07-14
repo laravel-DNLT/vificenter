@@ -44,7 +44,7 @@ class CoreController extends Controller {
 	public function danhmuc($id) {
 		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
 		$this->youtube = new Youtube($TEST_API_KEY);
-		$danhmuc = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->get();
+		$danhmuc = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->paginate(10);
 		foreach($danhmuc as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
 			$item->title= YoutubeHelper::getTitle($item->Url);

@@ -3,6 +3,7 @@
 use Alaouy\Youtube\Youtube;
 use Carbon\CarbonInterval;
 use Modules\Video\Entities\Video;
+use Modules\Video\Entities\YoutubeHelper;
 use Pingpong\Modules\Routing\Controller;
 
 class CoreController extends Controller {
@@ -15,7 +16,7 @@ class CoreController extends Controller {
 		$video = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->get();
 		foreach($video as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -27,7 +28,7 @@ class CoreController extends Controller {
 		$video = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->get();
 		foreach($video as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -58,7 +59,7 @@ class CoreController extends Controller {
 		$danhmuc = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->get();
 		foreach($danhmuc as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -66,7 +67,7 @@ class CoreController extends Controller {
 		$dm = Video::select('id','Url','idDanhMuc')->where('idDanhMuc', $id)->paginate(10);
 		foreach($dm as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -127,7 +128,7 @@ class CoreController extends Controller {
 		$all_video = Video::all();
 		foreach($all_video as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -135,7 +136,7 @@ class CoreController extends Controller {
 		$all = Video::Paginate(2);
 		foreach($all as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -148,7 +149,7 @@ class CoreController extends Controller {
 		$cate = Video::all();
 		foreach($cate as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}
@@ -156,7 +157,7 @@ class CoreController extends Controller {
 		$cates = Video::Paginate(2);
 		foreach($cates as $item) {
 			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg';
-			$item->title= $this->youtube->getVideoInfo($item->Url)->snippet->title;
+			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
 			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
 			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
 		}

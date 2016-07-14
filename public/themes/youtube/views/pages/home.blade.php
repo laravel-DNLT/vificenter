@@ -704,54 +704,17 @@
                     </div>
                     <!-- movie carousel -->
                     <div id="owl-demo-movie" class="owl-carousel carousel" data-autoplay="true" data-autoplay-timeout="3000" data-autoplay-hover="true" data-car-length="5" data-items="6" data-dots="false" data-loop="true" data-auto-width="true" data-margin="10">
+                        @foreach($video as $item)
+
                         <div class="item-movie item thumb-border">
                             <figure class="premium-img">
-                                <img src="{{theme('images/movie1.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
+                                <img src="{{$item->thumbnails}}" alt="carousel">
+                                <a href="video/{{$item->id}}" class="hover-posts">
                                     <span><i class="fa fa-search"></i></span>
                                 </a>
                             </figure>
                         </div>
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{theme('images/movie2.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{theme('images/movie3.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{theme('images/movie4.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{theme('images/movie5.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{theme('images/movie6.png')}}" alt="carousel">
-                                <a href="single-video-v3.html" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
-                        </div>
+                       @endforeach
                     </div><!-- end carousel -->
                 </div>
             </div>

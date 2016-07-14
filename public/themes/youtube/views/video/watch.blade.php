@@ -130,7 +130,7 @@
                             <div class="post thumb-border">
                                 <div class="post-thumb">
                                     <img src="{{$item->thumbnails}}" alt="landing">
-                                    <a href="#" class="hover-posts">
+                                    <a href="{{url("video/$item->id")}}" class="hover-posts">
                                         <span><i class="fa fa-play"></i>Xem Video</span>
                                     </a>
                                     <div class="video-stats clearfix">
@@ -147,7 +147,7 @@
                                     </div>
                                 </div>
                                 <div class="post-des">
-                                    <h6><a href="#">{{$item->title}}</a></h6>
+                                    <h6><a href="{{url("video/$item->id")}}">{{$item->title}}</a></h6>
                                     <div class="post-stats clearfix">
                                         <p class="pull-left">
                                             <i class="fa fa-eye"></i>
@@ -200,7 +200,7 @@
                                     </a>
                                 </div>
                                 <div class="video-box-content">
-                                    <h6><a href="#">{{$item->title}}</a></h6>
+                                    <h6><a href="{{url("video/$item->id")}}">{{$item->title}}</a></h6>
                                     <p>
                                         <span><i class="fa fa-eye"></i>1,862K</span>
                                     </p>

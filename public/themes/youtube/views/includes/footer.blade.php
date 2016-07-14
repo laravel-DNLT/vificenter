@@ -17,51 +17,27 @@
                     <h5>Video Gần Đây</h5>
                 </div>
                 <div class="widgetContent">
+                    <?php
+                    $video = \Modules\Video\Entities\Video::Paginate(3);
+
+                    ?>
+                    @foreach($video as $item)
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "{{ theme('images/recent1.png') }}" alt="recent">
-                                <a href="#" class="hover-posts">
+                                <img src= "{{'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg'}}" alt="recent">
+                                <a href="video/{{$item->id}}" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
                             </div>
                         </div>
                         <div class="media-object-section">
                             <div class="media-content">
-                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
+                                <h6><a href="video/{{$item->id}}">{{\Modules\Video\Entities\YoutubeHelper::getTitle($item->Url)}}</a></h6>
                             </div>
                         </div>
                     </div>
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <div class="recent-img">
-                                <img src= "{{ theme('images/video-thumbnail/1.jpg') }}" alt="recent">
-                                <a href="#" class="hover-posts">
-                                    <span><i class="fa fa-play"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <div class="media-content">
-                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <div class="recent-img">
-                                <img src= "{{ theme('images/recent3.png') }}" alt="recent">
-                                <a href="#" class="hover-posts">
-                                    <span><i class="fa fa-play"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <div class="media-content">
-                                <h6><a href="#">Họp Fan Trường Giang 2015 Phần 1</a></h6>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

@@ -896,7 +896,6 @@ input[type=checkbox]:checked + .customLabel:before {
       position: relative;
       z-index: 1;
       width: 100%;
-      height: 300px;
       margin: 0; }
       #premium .owl-carousel .item figure.premium-img img {
         width: 100%;

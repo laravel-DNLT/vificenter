@@ -40,7 +40,7 @@
 
                     </figcaption>
                 </figure>
-                <a href="/video/{{$item->id}}" class="hover-posts">
+                <a href="{{url("video/$item->id")}}" class="hover-posts">
                     <span><i class="fa fa-play"></i>Xem Video</span>
                 </a>
             </div>
@@ -87,7 +87,7 @@
                                         <div class="post thumb-border">
                                             <div class="post-thumb">
                                                 <img src="{{$item->thumbnails}}" alt="new video">
-                                                <a href="video/{{$item->id}}" class="hover-posts">
+                                                <a href="{{url("video/$item->id")}}" class="hover-posts">
                                                     <span><i class="fa fa-play"></i>Xem Video</span>
                                                 </a>
                                                 <div class="video-stats clearfix">

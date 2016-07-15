@@ -25,7 +25,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "{{'https://img.youtube.com/vi/'.$item->Url.'/maxresdefault.jpg'}}" alt="recent">
+                                <img src= "{{'https://img.youtube.com/vi/'.$item->Url.'/mqdefault.jpg'}}" alt="recent">
                                 <a href="video/{{$item->id}}" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>

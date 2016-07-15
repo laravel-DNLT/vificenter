@@ -24,38 +24,20 @@
                     <div class="widgetTitle">
                         <h5>Danh Mục</h5>
                     </div>
+                    <?php
+                    $menu_level = \Modules\Video\Entities\DanhMuc::all();
+                    ?>
+
                     <div class="widgetContent">
                         <ul class="accordion" data-accordion>
-                            <li class="accordion-item is-active" data-accordion-item>
-                                <a href="#" class="accordion-title">Game Show</a>
-                                <div class="accordion-content" data-tab-content>
-                                </div>
-                            </li>
+                            @foreach($menu_level as $item_level)
+
                             <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Hoài Linh</a>
+                                <a href="{{ url('danh-muc/'.$item_level->id) }}" class="accordion-title">{{$item_level->Ten}}</a>
                                 <div class="accordion-content" data-tab-content>
                                 </div>
                             </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Trường Giang</a>
-                                <div class="accordion-content" data-tab-content>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Trấn Thành</a>
-                                <div class="accordion-content" data-tab-content>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Haha Tv</a>
-                                <div class="accordion-content" data-tab-content>
-                                </div>
-                            </li>
-                            <li class="accordion-item" data-accordion-item>
-                                <a href="#" class="accordion-title">Fap Tv</a>
-                                <div class="accordion-content" data-tab-content>
-                                </div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

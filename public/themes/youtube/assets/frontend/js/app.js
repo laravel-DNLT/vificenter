@@ -135,16 +135,7 @@ jQuery(document).ready(function(jQuery){
         });
     }
     //newsTicker
-    jQuery('#newsBar').inewsticker({
-        speed       : 2500,
-        effect      : 'fade',
-        dir         : 'ltr',
-        font_size   : 13,
-        color       : '#fff',
-        font_family : 'arial',
-        delay_after : 1000
-    });
-
+    
     //show more and less
     jQuery('.showmore_one').showMore({
         speedDown: 300,

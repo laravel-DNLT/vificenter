@@ -133,7 +133,7 @@
 <script src="{{theme('layerslider/js/layerslider.transitions.js')}}" type="text/javascript"></script>
 <script src="{{theme('layerslider/js/layerslider.kreaturamedia.jquery.js')}}" type="text/javascript"></script>
 <script src="{{theme('js/owl.carousel.min.js')}}"></script>
-<script src="{{theme('js/inewsticker.js')}}" type="text/javascript"></script>
-<script src="{{theme('js/jquery.kyco.easyshare.js')}}" type="text/javascript"></script>
+
+
 </body>
 </html>

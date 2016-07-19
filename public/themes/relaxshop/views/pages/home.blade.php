@@ -1,366 +1,1553 @@
 @extends('layouts.frontend')
 @section('title','Home')
 @section('content')
-    <div class="off-canvas-content" data-off-canvas-content>
 
-        <!-- verticle thumb slider -->
-        <section id="verticalSlider-light">
-            <div class="row">
-                <div class="large-12 columns">
-                    <div class="thumb-slider">
-                        <div class="main-image">
-                            @foreach($video as $item)
-                            <div class="image {{$item->id}}">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$item->Url}}" allowfullscreen></iframe>
-                            </div>
-                            @endforeach
-                        </div>
-                        <div class="thumbs">
-                            <div class="thumbnails">
-                                @foreach($video as $item)
-                                    <div class="ver-thumbnail" id="{{$item->id}}">
-                                    <img src="{{$item->thumbnails}}" alt="imaga">
-                                    <div class="item-title">
-
-                                        <h6>{{$item->title}}</h6>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
-                            <a class="up" href="javascript:void(0)"><i class="fa fa-angle-up"></i></a>
-                            <a class="down" href="javascript:void(0)"><i class="fa fa-angle-down"></i></a>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+        <!-- home slider start -->
+<div class="slider-container">
+    <!-- Slider Image -->
+    <div id="mainSlider" class="nivoSlider slider-image">
+        <img src="{{theme('img/slider/3.jpg')}}" alt="main slider" title="#htmlcaption1"/>
+        <img src="{{theme('img/slider/1.jpg')}}" alt="main slider" title="#htmlcaption2"/>
+    </div>
+    <!-- Slider Caption 1 -->
+    <div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
+        <div class="slider-progress"></div>
+        <div class="slide1-text">
+            <div class="middle-text">
+                <div class="cap-dec wow bounceInDown" data-wow-duration="0.9s" data-wow-delay="0s">
+                    <h3>trendy summer collection 2016</h3>
+                </div>
+                <div class="cap-title wow bounceInRight" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                    <h1>Top fashion for men</h1>
+                </div>
+                <div class="cap-readmore wow bounceInUp" data-wow-duration="1.3s" data-wow-delay=".5s">
+                    <a href="#">shop now</a>
                 </div>
             </div>
-        </section>
-        <!-- Premium Videos -->
-        <section class="content">
-            <!-- newest video -->
-            <div class="main-heading">
-                <div class="row secBg padding-14">
-                    <div class="medium-8 small-8 columns">
-                        <div class="head-title">
-                            <i class="fa fa-film"></i>
-                            <h4>Video Mới Nhất</h4>
-                        </div>
-                    </div>
-                    <div class="medium-4 small-4 columns">
-                        <ul class="tabs text-right pull-right" data-tabs>
-                            <li class="tabs-title is-active"><a class="is-active" href="#" data-tab="1">All</a></li>
-                            <li class="tabs-title" data-tab-index="1"><a href="#" data-tab="2">HD</a></li>
-                        </ul>
-                    </div>
+        </div>
+    </div>
+    <!-- Slider Caption 2 -->
+    <div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
+        <div class="slider-progress"></div>
+        <div class="slide1-text">
+            <div class="middle-text">
+                <div class="cap-dec wow bounceIn" data-wow-duration="0.7s" data-wow-delay="0s">
+                    <h3>trendy summer collection 2016</h3>
+                </div>
+                <div class="cap-title wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h1>Top fashion for women</h1>
+                </div>
+                <div class="cap-readmore wow bounceIn" data-wow-duration="1.1s" data-wow-delay=".5s">
+                    <a href="#">shop now</a>
                 </div>
             </div>
-            <div class="row secBg">
-                <div class="large-12 columns">
-                    <div class="row column head-text clearfix">
-                        <p class="pull-left">Tất cả video : <span>1,862 Videos được đăng</span></p>
-                        <div class="grid-system pull-right show-for-large">
-                            <a class="secondary-button current grid-default" href="#"><i class="fa fa-th"></i></a>
-                            <a class="secondary-button grid-medium" href="#"><i class="fa fa-th-large"></i></a>
-                            <a class="secondary-button list" href="#"><i class="fa fa-th-list"></i></a>
+        </div>
+    </div>
+</div>
+<!-- home slider end -->
+<!-- banner-area start -->
+<div class="banner-area pad-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-banner">
+                    <a href="#">
+                        <img src="{{theme('img/banner/6.jpg')}}" alt="" />
+                        <div class="banner-caption">
+                            <h2>Men's <span>Sunglasses</span></h2>
+                            <p>Our sunglasses and retro frames are all shades of great.</p>
                         </div>
-                    </div>
-                    <div class="tabs-content">
-                        <div class="tab-container tab-content active" data-content="1">
-                            <div class="row list-group">
-                                @foreach($video as $item)
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{$item->thumbnails}}" alt="new video">
-                                            <a href="video/{{$item->id}}" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Xem Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>{{ $item->time}}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="video/{{$item->id}}">{{$item->title}}</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5/1/2016</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>{{$item->des}}</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                    @endforeach
-                            </div>
+                    </a>
+                </div>
+                <div class="single-banner marg-20">
+                    <a href="#">
+                        <img src="{{theme('img/banner/5.jpg')}}" alt="" />
+                        <div class="banner-caption">
+                            <h2>Men's <span>Watches</span></h2>
+                            <p>Designer or digital, vintage or leather - it's time to get smart.</p>
                         </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-banner">
+                    <a href="#">
+                        <img src="{{theme('img/banner/b1.jpg')}}" alt="" />
+                        <div class="banner-caption">
+                            <h2>New Men's <span> style</span></h2>
+                            <p>Style it like a boss with this week's most hyped T-shirts.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-banner">
+                    <a href="#">
+                        <img src="{{theme('img/banner/1.jpg')}}" alt="" />
+                        <div class="banner-caption">
+                            <h2>Men's <span>Shoes</span></h2>
+                            <p>Marley tried to convince her but she was not interested.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="single-banner marg-20">
+                    <a href="#">
+                        <img src="{{theme('img/banner/3.jpg')}}" alt="" />
+                        <div class="banner-caption">
+                            <h2><span> Sunglasses</span></h2>
+                            <p>Our sunglasses and retro frames are all shades of great.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner-area end -->
+<!-- featured-area start -->
+<div class="featured-area pad-60">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Most Popular product</h2>
+                <div class="title-icon">
+                    <span><i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-tab">
+                    <!-- Nav tabs -->
+                    <ul class="product-nav" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">most popular</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">best stellar</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">new arrival</a></li>
+                    </ul>
 
-                        <div class="tab-container tab-content" data-content="2">
-                            <div class="row list-group">
-                                @foreach($video as $item)
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{$item->thumbnails}}" alt="new video">
-                                            <a href="video/{{$item->id}}" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Xem</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="video/{{$item->id}}">{{$item->title}}</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                {{$item->description}}
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="video/{{$item->id}}" class="secondary-button"><i class="fa fa-play-circle"></i>Xem</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center row-btn">
-                        <a class="button radius" href="{{ url('video/tat-ca-video') }}">Xem Tất Cả</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="content">
-            <!-- End newest video -->
-            <!-- ad Section -->
-            <div class="googleAdv">
-                <a href="#"><img src="{{theme('images/goodleadv.png')}}" alt="googel ads"></a>
-            </div><!-- End ad Section -->
-
-            <!-- popular Videos -->
-            <div class="main-heading">
-                <div class="row secBg padding-14">
-                    <div class="medium-8 small-8 columns">
-                        <div class="head-title">
-                            <i class="fa fa-star"></i>
-                            <h4>Videos Xem Nhiều Nhất</h4>
-                        </div>
-                    </div>
-                    <div class="medium-4 small-4 columns">
-                        <ul class="tabs text-right pull-right" data-tabs id="popularVideos">
-                            <li class="tabs-title is-active"><a href="#popular-all">all</a></li>
-                            <li class="tabs-title"><a href="#popular-hd">HD</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row secBg">
-                <div class="large-12 columns">
-                    <div class="row column head-text clearfix">
-                        <p class="pull-left">Tất cả video : <span>1,862 Videos được đăng</span></p>
-                        <div class="grid-system pull-right show-for-large">
-                            <a class="secondary-button current grid-default" href="#"><i class="fa fa-th"></i></a>
-                            <a class="secondary-button grid-medium" href="#"><i class="fa fa-th-large"></i></a>
-                            <a class="secondary-button list" href="#"><i class="fa fa-th-list"></i></a>
-                        </div>
-                    </div>
-                    <div class="tabs-content" data-tabs-content="popularVideos">
-                        <div class="tabs-panel is-active" id="popular-all">
-                            <div class="row list-group">
-                                @foreach($video as $item)
-                                    <div class="item large-3 medium-6 columns group-item-grid-default">
-                                        <div class="post thumb-border">
-                                            <div class="post-thumb">
-                                                <img src="{{$item->thumbnails}}" alt="new video">
-                                                <a href="video/{{$item->id}}" class="hover-posts">
-                                                    <span><i class="fa fa-play"></i>Xem Video</span>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="row">
+                                <div class="product-curosel">
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/w1.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/w2.jpg')}}" alt="" />
                                                 </a>
-                                                <div class="video-stats clearfix">
-                                                    <div class="thumb-stats pull-left">
-                                                        <h6>HD</h6>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
                                                     </div>
-                                                    <div class="thumb-stats pull-left">
-                                                        <i class="fa fa-heart"></i>
-                                                        <span>506</span>
-                                                    </div>
-                                                    <div class="thumb-stats pull-right">
-                                                        <span>{{ $item->time}}</span>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="post-des">
-                                                <h6><a href="video/{{$item->id}}">{{$item->title}}</a></h6>
-                                                <div class="post-stats clearfix">
-                                                    <p class="pull-left">
-                                                        <i class="fa fa-user"></i>
-                                                        <span><a href="#">admin</a></span>
-                                                    </p>
-                                                    <p class="pull-left">
-                                                        <i class="fa fa-clock-o"></i>
-                                                        <span>5/1/2016</span>
-                                                    </p>
-                                                    <p class="pull-left">
-                                                        <i class="fa fa-eye"></i>
-                                                        <span>1,862K</span>
-                                                    </p>
-                                                </div>
-                                                <div class="post-summary">
-                                                    <p>{{$item->des}}</p>
-                                                </div>
-                                                <div class="post-button">
-                                                    <a href="https://www.youtube.com/watch?v=64FoFqx4W8c" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$70.00</span>
+                                                    <span class="old">$80.11</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach
-                            </div>
-                        </div>
-                        <div class="tabs-panel" id="popular-hd">
-                            <div class="row list-group">
-                                <div class="item large-3 medium-6 columns group-item-grid-default">
-                                    <div class="post thumb-border">
-                                        <div class="post-thumb">
-                                            <img src="{{theme('images/video-thumbnail/1.jpg')}}" alt="new video">
-                                            <a href="single-video-v2.html" class="hover-posts">
-                                                <span><i class="fa fa-play"></i>Watch Video</span>
-                                            </a>
-                                            <div class="video-stats clearfix">
-                                                <div class="thumb-stats pull-left">
-                                                    <h6>HD</h6>
-                                                </div>
-                                                <div class="thumb-stats pull-left">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>506</span>
-                                                </div>
-                                                <div class="thumb-stats pull-right">
-                                                    <span>05:56</span>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/3.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/4.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="post-des">
-                                            <h6><a href="single-video-v2.html">There are many variations of passage.</a></h6>
-                                            <div class="post-stats clearfix">
-                                                <p class="pull-left">
-                                                    <i class="fa fa-user"></i>
-                                                    <span><a href="#">admin</a></span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <span>5 January 16</span>
-                                                </p>
-                                                <p class="pull-left">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>1,862K</span>
-                                                </p>
-                                            </div>
-                                            <div class="post-summary">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                            </div>
-                                            <div class="post-button">
-                                                <a href="single-video-v2.html" class="secondary-button"><i class="fa fa-play-circle"></i>watch video</a>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/w3.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/w7.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/7.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/8.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/9.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/10.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/w8.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/w12.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/13.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/14.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/15.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/16.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div class="text-center row-btn">
-                        <a class="button radius" href="{{ url('video/tat-ca-video') }}">Xem Tất Cả</a>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div class="row">
+                                <div class="product-curosel">
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/17.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/18.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$70.00</span>
+                                                    <span class="old">$80.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/19.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/20.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/21.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/22.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/23.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/6.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/2.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/1.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/4.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/3.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/6.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/5.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/7.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/8.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="row">
+                                <div class="product-curosel">
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/10.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/9.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$70.00</span>
+                                                    <span class="old">$80.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/12.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/11.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/14.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/13.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/16.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/15.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/18.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/17.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/20.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/19.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/21.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/22.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                    <!-- single-product start -->
+                                    <div class="col-md-12">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="single-product.html">
+                                                    <img src="{{theme('img/product/23.jpg')}}" alt="" />
+                                                    <img class="secondary-img" src="{{theme('img/product/5.jpg')}}" alt="" />
+                                                </a>
+                                                <span class="tag-line">new</span>
+                                                <div class="product-action">
+                                                    <div class="button-top">
+                                                        <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                                        <a href="#" ><i class="fa fa-heart"></i></a>
+                                                    </div>
+                                                    <div class="button-cart">
+                                                        <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                                <div class="price">
+                                                    <span>$80.00</span>
+                                                    <span class="old">$90.11</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single-product end -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- ad Section -->
-            <div class="googleAdv">
-                <a href="#"><img src="{{theme('images/goodleadv.png')}}" alt="googel ads"></a>
-            </div><!-- End ad Section -->
-        </section><!-- End main content -->
-        <!-- movies -->
-        <section id="movies">
-            <div class="row secBg">
-                <div class="large-12 columns">
-                    <div class="column row">
-                        <div class="heading category-heading clearfix">
-                            <div class="cat-head pull-left">
-                                <i class="fa fa-video-camera"></i>
-                                <h4>Xem Phim</h4>
+        </div>
+    </div>
+</div>
+<!-- featured-area end -->
+<!-- upcoming-product-area start -->
+<div class="upcoming-product-area pad-60">
+    <div class="container">
+        <div class="row">
+            <div class="upcoming-curosel">
+                <!-- upcoming-single start -->
+                <div class="upcoming-single">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="upcoming-img">
+                            <a href="single-product.html"><img src="{{theme('img/product/9.jpg')}}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="upcoming-content">
+                            <h2><a href="#">Lorem ipsum dolor</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum.</p>
+                            <div class="timer">
+                                <div data-countdown="2017/02/01"></div>
                             </div>
-                            <div>
-                                <div class="navText pull-right show-for-large">
-                                    <a class="prev secondary-button"><i class="fa fa-angle-left"></i></a>
-                                    <a class="next secondary-button"><i class="fa fa-angle-right"></i></a>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- movie carousel -->
-                    <div id="owl-demo-movie" class="owl-carousel carousel" data-autoplay="true" data-autoplay-timeout="3000" data-autoplay-hover="true" data-car-length="5" data-items="6" data-dots="false" data-loop="true" data-auto-width="true" data-margin="10">
-                        @foreach($videos as $item)
-
-                        <div class="item-movie item thumb-border">
-                            <figure class="premium-img">
-                                <img src="{{$item->thumbnails}}" alt="carousel">
-                                <a href="video/{{$item->id}}" class="hover-posts">
-                                    <span><i class="fa fa-search"></i></span>
-                                </a>
-                            </figure>
+                </div>
+                <!-- upcoming-single end -->
+                <!-- upcoming-single start -->
+                <div class="upcoming-single">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="upcoming-img">
+                            <a href="single-product.html"><img src="{{theme('img/product/w1.jpg')}}" alt="" /></a>
                         </div>
-                       @endforeach
-                    </div><!-- end carousel -->
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="upcoming-content">
+                            <h2><a href="#">Lorem ipsum dolor</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum.</p>
+                            <div class="timer">
+                                <div data-countdown="2017/02/01"></div>
+                            </div>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- upcoming-single end -->
+                <!-- upcoming-single start -->
+                <div class="upcoming-single">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="upcoming-img">
+                            <a href="single-product.html"><img src="{{theme('img/product/5.jpg')}}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="upcoming-content">
+                            <h2><a href="#">Lorem ipsum dolor</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum.</p>
+                            <div class="timer">
+                                <div data-countdown="2017/02/01"></div>
+                            </div>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- upcoming-single end -->
+                <!-- upcoming-single start -->
+                <div class="upcoming-single">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="upcoming-img">
+                            <a href="single-product.html"><img src="{{theme('img/product/w9.jpg')}}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <div class="upcoming-content">
+                            <h2><a href="#">Lorem ipsum dolor</a></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Nam liber tempor cum.</p>
+                            <div class="timer">
+                                <div data-countdown="2017/02/01"></div>
+                            </div>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- upcoming-single end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- upcoming-product-area end -->
+<!-- category-area start -->
+<div class="category-area pad-60">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Exclusive collection</h2>
+                <div class="title-icon">
+                    <span><i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></span>
                 </div>
             </div>
-        </section><!-- End movie -->
-        <div class="googleAdv text-center">
-            <a href="#"><img src="{{theme('images/goodleadv.png')}}" alt="googel ads"></a>
-        </div><!-- End ad Section -->
-        <!-- footer -->
-
-    </div><!--end off canvas content-->
+        </div>
+        <div class="row">
+            <div class="product-curosel">
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/2.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/1.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$70.00</span>
+                                <span class="old">$80.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/5.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/7.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$70.00</span>
+                                <span class="old">$80.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/16.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/14.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/13.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/12.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/11.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/6.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/9.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/8.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/7.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/8.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/5.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/2.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/1.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/2.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/9.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/10.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/12.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/18.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/7.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/12.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/16.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/17.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/8.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/9.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+                <!-- single-product start -->
+                <div class="col-md-12">
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/9.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/10.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="single-product.html">
+                                <img src="{{theme('img/product/12.jpg')}}" alt="" />
+                                <img class="secondary-img" src="{{theme('img/product/9.jpg')}}" alt="" />
+                            </a>
+                            <span class="tag-line">new</span>
+                            <div class="product-action">
+                                <div class="button-top">
+                                    <a href="#" data-toggle="modal" data-target="#productModal"><i class="fa fa-search"></i></a>
+                                    <a href="#" ><i class="fa fa-heart"></i></a>
+                                </div>
+                                <div class="button-cart">
+                                    <button><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                            <div class="price">
+                                <span>$80.00</span>
+                                <span class="old">$90.11</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single-product end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- category-area end -->
+<!-- latest-blog-area start -->
+<div class="latest-blog-area pad-60">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Latest Blog</h2>
+                <div class="title-icon">
+                    <span><i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog-curosel">
+                <div class="col-md-12">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="{{theme('img/blog/4.jpg')}}" alt="" /></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">sep 21,2015</span>
+                                <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                            <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="{{theme('img/blog/2.jpg')}}" alt="" /></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">sep 21,2015</span>
+                                <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                            <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="{{theme('img/blog/3.jpg')}}" alt="" /></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">sep 21,2015</span>
+                                <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                            <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="{{theme('img/blog/1.jpg')}}" alt="" /></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">sep 21,2015</span>
+                                <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                            <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <a href="single-blog.html"><img src="{{theme('img/blog/5.jpg')}}" alt="" /></a>
+                        </div>
+                        <div class="blog-content">
+                            <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">sep 21,2015</span>
+                                <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                            <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="single-blog">
+                        <a href="single-blog.html"><img src="{{theme('img/blog/2.jpg')}}" alt="" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="single-blog.html">Lorem ipsum dolor sit</a></h3>
+                        <div class="blog-meta">
+                            <span class="blog-date">sep 21,2015</span>
+                            <span class="blog-author">By <a href="#">ThemeBuz</a></span>
+                            <span class="blog-cat">in <a href="#">men's Style</a></span>
+                        </div>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut .....</p>
+                        <a class="read-more" href="#">Read more <i class="fa fa-angle-right"></i> <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- latest-blog-area end -->
 @endsection

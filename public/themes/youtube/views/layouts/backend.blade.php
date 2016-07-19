@@ -47,8 +47,7 @@
                         <img src="{{admin('images/img.jpg')}}" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
-                        <span>Chào ,</span>
-                        <h2> @if (Auth::check()){{ Auth::user()->name }} @endif</h2>
+                        <span>Chào ,  @if (Auth::check()){{ Auth::user()->name }} @endif</span>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
@@ -58,7 +57,7 @@
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
-                        <h3>General</h3>
+                        <h3>Quản trị viên</h3>
                         <ul class="nav side-menu">
 
                             <li><a><i class="fa fa-edit"></i> Danh Mục <span class="fa fa-chevron-down"></span></a>
@@ -164,7 +163,7 @@
 
 <!-- Custom Theme Scripts -->
 <script src="{{admin('js/custom.min.js')}}"></script>
-@yield('script')
+@yield('scripts')
 
 <!-- Flot -->
 <script>

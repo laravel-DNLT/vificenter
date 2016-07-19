@@ -8,7 +8,7 @@ class Video extends Model {
     protected $table = 'video';
     protected $fillable = [];
     public function thumbnails(){
-        return 'https://img.youtube.com/vi/'.$this->fillable->Url.'/maxresdefault.jpg';
+        return 'https://img.youtube.com/vi/'.$this->fillable->Url.'/mqdefault.jpg';
     }
 
     public static function getTitle($url){

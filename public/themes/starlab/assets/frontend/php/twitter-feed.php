@@ -1,0 +1,3 @@
+
+<!-- saved from url=(0115)http://preview.oklerthemes.com/porto/4.8.0/php/twitter-feed.php?twitter_screen_name=oklerthemes&tweets_to_display=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><ul><li><span class="status"><i class="fa fa-twitter"></i> If you have any suggestions for the next updates, let us know.</span><span class="meta"> <a href="http://twitter.com/OklerThemes/status/644859776422293504">07:05 AM Sep 18th</a></span></li><li><span class="status"><i class="fa fa-twitter"></i> We have just updated Porto Admin. Check the changelog for more information.</span><span class="meta"> <a href="http://twitter.com/OklerThemes/status/644859595777830913">07:04 AM Sep 18th</a></span></li></ul></body></html>

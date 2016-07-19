@@ -1,357 +1,269 @@
-<section class="category-content">
-    <div class="row">
-        <!-- left side content area -->
-        <div class="large-8 columns">
-            <h1>{{ $post->title }}</h1>
-            <h5>{{ $post->published_at->format('M jS Y g:ia') }}</h5>
-            <div class="blog-post">
-                <div class="row secBg">
-
-                    <div class="large-12 columns">
-                        <div class="blog-post-heading">
-                            <h3><a href="#">There are many variations of passage. </a></h3>
-                            <p>
-                                <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                <span><i class="fa fa-clock-o"></i>5 January 16</span>
-                                <span><i class="fa fa-eye"></i>1,862K</span>
-                                <span><i class="fa fa-commenting"></i>8</span>
-                            </p>
-                        </div>
-                        <div class="blog-post-content">
-                            <div class="blog-post-img">
-                                <img src="{{theme('images/blog-post-img.png')}}" alt="blog image">
-                            </div>
-                            {!! nl2br(e($post->content)) !!}
-                            <div class="blog-post-extras">
-                                <div class="categories extras">
-                                    <button><i class="fa fa-folder-open"></i>categories</button>
-                                    <a href="#">entertainment</a>
-                                </div>
-                                <div class="tags extras">
-                                    <button><i class="fa fa-tags"></i>tags</button>
-                                    <a href="#">3d movies</a>
-                                    <a href="#">videos</a>
-                                    <a href="#">HD</a>
-                                    <a href="#">Movies</a>
-                                </div>
-                                <div class="social-share extras">
-                                    <div class="post-like-btn clearfix">
-                                        <div class="easy-share" data-easyshare data-easyshare-http data-easyshare-url="http://joinwebs.com/">
-
-                                            <button class="float-left"><i class="fa fa-share-alt"></i>share</button>
-                                            <!-- Facebook -->
-                                            <button class="removeBorder" data-easyshare-button="facebook">
-                                                <span class="fa fa-facebook"></span>
-                                            </button>
-
-                                            <!-- Twitter -->
-                                            <button class="removeBorder" data-easyshare-button="twitter" data-easyshare-tweet-text="">
-                                                <span class="fa fa-twitter"></span>
-                                            </button>
-
-                                            <!-- Google+ -->
-                                            <button class="removeBorder" data-easyshare-button="google">
-                                                <span class="fa fa-google-plus"></span>
-                                            </button>
-
-                                            <div data-easyshare-loader>Loading...</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-pagination text-center">
-                                <a href="#"><i class="fa fa-long-arrow-left left-arrow"></i>previous post</a>
-                                <a href="#">next post<i class="fa fa-long-arrow-right right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" onclick="history.go(-1)">
-                        « Trở lại
-                    </button>
+@extends('layouts.frontend')
+@section('title',config('blog.title'))
+@section('content')
+        <!-- breadcrumb-area start -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-list">
+                    <h1>Blog Details</h1>
+                    <ul>
+                        <li><a href="index.html">home</a> <span class="divider">|</span></li>
+                        <li><a href="blog.html">Blog</a> <span class="divider">|</span></li>
+                        <li>{{ $post->title }}</li>
+                    </ul>
                 </div>
-            </div><!-- end blog post -->
-            <!-- post written by -->
-          
-           
-            <!-- ad Section -->
-            <div class="googleAdv">
-                <a href="#"><img src="{{theme('images/goodleadv.png')}}" alt="googel ads"></a>
-            </div><!-- End ad Section -->
-        </div><!-- end left side content area -->
-        <!-- sidebar -->
-        <div class="large-4 columns">
-            <aside class="secBg sidebar">
-                <div class="row">
-                    <!-- search Widget -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>Search Videos</h5>
-                            </div>
-                            <form id="searchform" method="get" role="search">
-                                <div class="input-group">
-                                    <input class="input-group-field" type="text" placeholder="Enter your keyword">
-                                    <div class="input-group-button">
-                                        <input type="submit" class="button" value="Submit">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div><!-- End search Widget -->
-
-                    <!-- most view Widget -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>Most View Videos</h5>
-                            </div>
-                            <div class="widgetContent">
-                                <div class="video-box thumb-border">
-                                    <div class="video-img-thumb">
-                                        <img src="{{theme('images/video-thumbnail/7.jpg')}}" alt="most viewed videos">
-                                        <a href="#" class="hover-posts">
-                                            <span><i class="fa fa-play"></i>Watch Video</span>
-                                        </a>
-                                    </div>
-                                    <div class="video-box-content">
-                                        <h6><a href="#">There are many variations of passage. </a></h6>
-                                        <p>
-                                            <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                            <span><i class="fa fa-clock-o"></i>5 January 16</span>
-                                            <span><i class="fa fa-eye"></i>1,862K</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="video-box thumb-border">
-                                    <div class="video-img-thumb">
-                                        <img src="{{theme('images/widget-most1.png')}}" alt="most viewed videos">
-                                        <a href="#" class="hover-posts">
-                                            <span><i class="fa fa-play"></i>Watch Video</span>
-                                        </a>
-                                    </div>
-                                    <div class="video-box-content">
-                                        <h6><a href="#">There are many variations of passage. </a></h6>
-                                        <p>
-                                            <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                            <span><i class="fa fa-clock-o"></i>5 January 16</span>
-                                            <span><i class="fa fa-eye"></i>1,862K</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="video-box thumb-border">
-                                    <div class="video-img-thumb">
-                                        <img src="{{theme('images/widget-most2.png')}}" alt="most viewed videos">
-                                        <a href="#" class="hover-posts">
-                                            <span><i class="fa fa-play"></i>Watch Video</span>
-                                        </a>
-                                    </div>
-                                    <div class="video-box-content">
-                                        <h6><a href="#">There are many variations of passage. </a></h6>
-                                        <p>
-                                            <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                            <span><i class="fa fa-clock-o"></i>5 January 16</span>
-                                            <span><i class="fa fa-eye"></i>1,862K</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="video-box thumb-border">
-                                    <div class="video-img-thumb">
-                                        <img src="{{theme('images/widget-most3.png')}}" alt="most viewed videos">
-                                        <a href="#" class="hover-posts">
-                                            <span><i class="fa fa-play"></i>Watch Video</span>
-                                        </a>
-                                    </div>
-                                    <div class="video-box-content">
-                                        <h6><a href="#">There are many variations of passage. </a></h6>
-                                        <p>
-                                            <span><i class="fa fa-user"></i><a href="#">admin</a></span>
-                                            <span><i class="fa fa-clock-o"></i>5 January 16</span>
-                                            <span><i class="fa fa-eye"></i>1,862K</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end most view Widget -->
-
-                    <!-- categories -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox clearfix">
-                            <div class="widgetTitle">
-                                <h5>Categories</h5>
-                            </div>
-                            <div class="widgetContent clearfix">
-                                <ul>
-                                    <li class="cat-item"><a href="#">Entertainment &nbsp; (6)</a></li>
-                                    <li class="cat-item"><a href="#">Historical &amp; Archival &nbsp;(8)</a></li>
-                                    <li class="cat-item"><a href="#">Technology&nbsp;(4)</a></li>
-                                    <li class="cat-item"><a href="#">People&nbsp;(3)</a></li>
-                                    <li class="cat-item"><a href="#">Fashion &amp; Beauty&nbsp;(2)</a></li>
-                                    <li class="cat-item"><a href="#">Nature&nbsp;(1)</a></li>
-                                    <li class="cat-item"><a href="#">Automotive&nbsp;(5)</a></li>
-                                    <li class="cat-item"><a href="#">Foods &amp; Drinks&nbsp;(5)</a></li>
-                                    <li class="cat-item"><a href="#">Foods &amp; Drinks&nbsp;(10)</a></li>
-                                    <li class="cat-item"><a href="#">Animals&nbsp;(12)</a></li>
-                                    <li class="cat-item"><a href="#">Sports &amp; Recreation&nbsp;(14)</a></li>
-                                    <li class="cat-item"><a href="#">Places &amp; Landmarks&nbsp;(16)</a></li>
-                                    <li class="cat-item"><a href="#">Places &amp; Landmarks&nbsp;(1)</a></li>
-                                    <li class="cat-item"><a href="#">Travel&nbsp;(2)</a></li>
-                                    <li class="cat-item"><a href="#">Transportation&nbsp;(3)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- social Fans Widget -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>social fans</h5>
-                            </div>
-                            <div class="widgetContent">
-                                <div class="social-links">
-                                    <a class="socialButton" href="#">
-                                        <i class="fa fa-facebook"></i>
-                                        <span>698K</span>
-                                        <span>fans</span>
-                                    </a>
-                                    <a class="socialButton" href="#">
-                                        <i class="fa fa-twitter"></i>
-                                        <span>598</span>
-                                        <span>followers</span>
-                                    </a>
-                                    <a class="socialButton" href="#">
-                                        <i class="fa fa-google-plus"></i>
-                                        <span>98k</span>
-                                        <span>followers</span>
-                                    </a>
-                                    <a class="socialButton" href="#">
-                                        <i class="fa fa-youtube"></i>
-                                        <span>168k</span>
-                                        <span>followers</span>
-                                    </a>
-                                    <a class="socialButton" href="#">
-                                        <i class="fa fa-vimeo"></i>
-                                        <span>498</span>
-                                        <span>followers</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End social Fans Widget -->
-
-                    <!-- ad banner widget -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>Recent post videos</h5>
-                            </div>
-                            <div class="widgetContent">
-                                <div class="advBanner text-center">
-                                    <a href="#"><img src="{{theme('images/sideradv.png')}}" alt="sidebar adv"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end ad banner widget -->
-
-                    <!-- Recent post videos -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>Recent post videos</h5>
-                            </div>
-                            <div class="widgetContent">
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <div class="recent-img">
-                                            <img src= "images/category/category4.png')}}" alt="recent">
-                                            <a href="#" class="hover-posts">
-                                                <span><i class="fa fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="media-content">
-                                            <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                            <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <div class="recent-img">
-                                            <img src= "images/category/category2.png')}}" alt="recent">
-                                            <a href="#" class="hover-posts">
-                                                <span><i class="fa fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="media-content">
-                                            <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                            <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <div class="recent-img">
-                                            <img src= "images/sidebar-recent1.png')}}" alt="recent">
-                                            <a href="#" class="hover-posts">
-                                                <span><i class="fa fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="media-content">
-                                            <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                            <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <div class="recent-img">
-                                            <img src= "images/sidebar-recent2.png')}}" alt="recent">
-                                            <a href="#" class="hover-posts">
-                                                <span><i class="fa fa-play"></i></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="media-content">
-                                            <h6><a href="#">The lorem Ipsumbeen the industry's standard.</a></h6>
-                                            <p><i class="fa fa-user"></i><span>admin</span><i class="fa fa-clock-o"></i><span>5 january 16</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Recent post videos -->
-
-                    <!-- tags -->
-                    <div class="large-12 medium-7 medium-centered columns">
-                        <div class="widgetBox">
-                            <div class="widgetTitle">
-                                <h5>Tags</h5>
-                            </div>
-                            <div class="tagcloud">
-                                <a href="#">3D Videos</a>
-                                <a href="#">Videos</a>
-                                <a href="#">HD</a>
-                                <a href="#">Movies</a>
-                                <a href="#">Sports</a>
-                                <a href="#">3D</a>
-                                <a href="#">Movies</a>
-                                <a href="#">Animation</a>
-                                <a href="#">HD</a>
-                                <a href="#">Music</a>
-                                <a href="#">Recreation</a>
-                            </div>
-                        </div>
-                    </div><!-- End tags -->
-                </div>
-            </aside>
-        </div><!-- end sidebar -->
+            </div>
+        </div>
     </div>
-</section><!-- End Category Content-->
+</div>
+<!-- breadcrumb-area end -->
+<!-- blog-area start -->
+<div class="blog-area pad-60">
+    <div class="container">
+        <div class="row">
+            <!-- left-sidebar start -->
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <!-- widget start -->
+                <aside class="widget widget-categories">
+                    <h3 class="sidebar-title">Search</h3>
+                    <div class="search-form">
+                        <form action="#">
+                            <input type="text" placeholder="search">
+                            <button><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </aside>
+                <!-- widget end -->
+                <!-- widget-categories start -->
+                <aside class="widget widget-categories">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#">Clothes</a> <span class="count">(14)</span></li>
+                        <li><a href="#">Men</a> <span class="count">(9)</span></li>
+                        <li><a href="#">Shoes</a> <span class="count">(2)</span></li>
+                        <li><a href="#">Sunglasses</a> <span class="count">(2)</span></li>
+                        <li><a href="#">Women</a> <span class="count">(8)</span></li>
+                    </ul>
+                </aside>
+                <!-- widget-categories end -->
+                <!-- widget start -->
+                <aside class="widget widget-categories">
+                    <h3 class="sidebar-title">Recent Product</h3>
+                    <div class="recent-product">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="single-product.html">
+                                    <img src="{{theme('img/product/12.jpg')}}" alt="" />
+                                    <img class="secondary-img" src="{{theme('img/product/18.jpg')}}" alt="" />
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                <div class="price">
+                                    <span>$80.00</span>
+                                    <span class="old">$90.11</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="single-product.html">
+                                    <img src="{{theme('img/product/22.jpg')}}" alt="" />
+                                    <img class="secondary-img" src="{{theme('img/product/18.jpg')}}" alt="" />
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                <div class="price">
+                                    <span>$80.00</span>
+                                    <span class="old">$90.11</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="single-product.html">
+                                    <img src="{{theme('img/product/14.jpg')}}" alt="" />
+                                    <img class="secondary-img" src="{{theme('img/product/18.jpg')}}" alt="" />
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="single-product.html">Lorem ipsum dolor</a></h3>
+                                <div class="price">
+                                    <span>$80.00</span>
+                                    <span class="old">$90.11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- widget end -->
+                <!-- filter-by start -->
+                <aside class="widget filter-by">
+                    <h3 class="sidebar-title">Product price</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#">L</a> <span class="count">(1)</span></li>
+                        <li><a href="#">M</a> <span class="count">(1)</span></li>
+                        <li><a href="#">S</a> <span class="count">(1)</span></li>
+                        <li><a href="#">XL</a> <span class="count">(1)</span></li>
+                        <li><a href="#">XXL</a> <span class="count">(1)</span></li>
+                    </ul>
+                </aside>
+                <!-- filter-by end -->
+                <!-- widget start -->
+                <aside class="widget filter-by">
+                    <h3 class="sidebar-title">Color</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#">Black</a> <span class="count">(1)</span></li>
+                        <li><a href="#">White</a> <span class="count">(8)</span></li>
+                        <li><a href="#">Orange</a> <span class="count">(5)</span></li>
+                        <li><a href="#">Blue</a> <span class="count">(7)</span></li>
+                        <li><a href="#">Yellow</a> <span class="count">(11)</span></li>
+                        <li><a href="#">Brown</a> <span class="count">(16)</span></li>
+                        <li><a href="#">red</a> <span class="count">(9)</span></li>
+                    </ul>
+                </aside>
+                <!-- widget end -->
+                <!-- widget-tags start -->
+                <aside class="widget product-tag">
+                    <h3 class="sidebar-title">Popular Tags</h3>
+                    <ul>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">new</a></li>
+                        <li><a href="#">Collection men</a></li>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">best</a></li>
+                        <li><a href="shop.html">cloth</a></li>
+                    </ul>
+                </aside>
+                <!-- widget-tags end -->
+            </div>
+            <!-- left-sidebar end -->
+            <div class="col-md-9 col-sm-12 col-xs-12">
+                <div class="blog-page-main">
+                    <div class="blog-wrapper">
+                        <div class="blog-img">
+                            <img src="{{theme('img/blog/2.jpg')}}" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <h3>{{ $post->title }}</h3>
+                            <div class="blog-meta">
+                                <span class="blog-date">{{ $post->published_at}}</span>
+                                <span class="blog-author">By <a href="#">themebuz</a></span>
+                                <span class="blog-cat">in <a href="#">men's Style</a></span>
+                            </div>
+                            {!! nl2br(e($post->content_html)) !!}
+                        </div>
+                        <div class="single-post-comments">
+                            <div class="comments-area">
+                                <div class="comments-heading">
+                                    <h3>3 comments</h3>
+                                </div>
+                                <div class="comments-list">
+                                    <ul>
+                                        <li>
+                                            <div class="comments-details">
+                                                <div class="comments-list-img">
+                                                    <img alt="" src="{{theme('img/author.jpg')}}">
+                                                </div>
+                                                <div class="comments-content-wrap">
+															<span>
+																<b><a href="#">admin</a></b>
+																Post author
+																<span class="post-time">January 10, 2015 at 3:38 am</span>
+																<a href="#">Reply</a>
+															</span>
+                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="threaded-comments">
+                                            <div class="comments-details">
+                                                <div class="comments-list-img">
+                                                    <img alt="" src="{{theme('img/author.jpg')}}">
+                                                </div>
+                                                <div class="comments-content-wrap">
+															<span>
+																<b><a href="#">demo</a></b>
+																Post author
+																<span class="post-time">January 6, 2014 at 2:25 pm</span>
+																<a href="#">Reply</a>
+															</span>
+                                                    <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comments-details">
+                                                <div class="comments-list-img">
+                                                    <img alt="" src="{{theme('img/author.jpg')}}">
+                                                </div>
+                                                <div class="comments-content-wrap">
+															<span>
+																<b><a href="#">admin</a></b>
+																Post author
+																<span class="post-time">January 6, 2014 at 3:18 pm </span>
+																<a href="#">Reply</a>
+															</span>
+                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="comment-respond">
+                                <h3 class="comment-reply-title">Leave a Reply </h3>
+                                <span class="email-notes">Your email address will not be published. Required fields are marked *</span>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4">
+                                            <p>Name *</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <p>Email *</p>
+                                            <input type="email">
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <p>Website</p>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 comment-form-comment">
+                                            <p>Website</p>
+                                            <textarea rows="10" cols="30" id="message"></textarea>
+                                            <input type="submit" value="Post Comment">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- single-latest-blog end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-pagination">
+                    <div class="shop-breadcrumb">
+                        <button class="btn btn-primary" onclick="history.go(-1)">
+                            « Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- blog-area end -->
+@endsection

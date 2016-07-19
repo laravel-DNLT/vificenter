@@ -11,23 +11,8 @@ class CoreController extends Controller {
 	public $youtube;
 	public function index()
 	{
-		$TEST_API_KEY = 'AIzaSyA_mW1DiL6iERRSNVQ1N_xdDnQ7cMpIuoA';
-		$this->youtube = new Youtube($TEST_API_KEY);
-		$video = Video::select('id','Url','Descriptions')->orderBy('id', 'DESC')->paginate(4);
-		foreach($video as $item) {
-			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/mqdefault.jpg';
-			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
-			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
-			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
-		}
-		$videos = Video::Paginate(10);
-		foreach($videos as $item) {
-			$item->thumbnails = 'https://img.youtube.com/vi/'.$item->Url.'/mqdefault.jpg';
-			$item->title= \Modules\Video\Entities\YoutubeHelper::getTitle($item->Url);
-			$item->time= CarbonInterval::instance(new \DateInterval($this->youtube->getVideoInfo($item->Url)->contentDetails->duration));
-			$item->des = $this->youtube->getVideoInfo($item->Url)->snippet->description;
-		}
-		return view('pages.home',['video' => $video],['videos'=>$videos]);
+
+		return view('pages.home');
 	}
 
 

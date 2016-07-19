@@ -1,5 +1,4 @@
-<div class="row">
-    <div class="col-sm-12">
+
 {{-- Create Folder Modal --}}
 <div class="modal fade" id="modal-folder-create">
     <div class="modal-dialog">
@@ -175,7 +174,5 @@
                 </button>
             </div>
         </div>
-    </div>
-</div>
     </div>
 </div>

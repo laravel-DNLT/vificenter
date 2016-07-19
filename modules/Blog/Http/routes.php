@@ -16,7 +16,7 @@ Route::group([
 ], function () {
 
 		Route::auth();
-		Route::resource('post', 'PostController');
+		Route::resource('post', 'PostController', ['except' => 'show']);
 		Route::resource('tag', 'TagController', ['except' => 'show']);
 		Route::get('upload', 'UploadController@index');
 

@@ -1,113 +1,120 @@
-<!-- footer -->
 <footer>
-    <div class="row">
-        <div class="large-3 medium-6 columns">
-            <div class="widgetBox">
-                <div class="widgetTitle">
-                    <h5>Về Chúng Tôi</h5>
-                </div>
-                <div class="textwidget">
-                    HahaTv.com là website tổng hợp clip - video hài nhằm đem lại tiếng cười sảng khoái cho mọi người. Rất đơn giản, chỉ cần vào hahatv.com và cười. Đặc biệt những clip hài, phim hài vào dịp tết nguyên đán của các năm sẽ được chúng tôi update mới nhất! Like video - clip bạn thích! Chỉ cần click like, đã thay lời khen ngợi của bạn đến tác giả và giúp chia sẻ tiếng cười đến hàng trăm người khác. Bình luận video - clip bạn thích! Bình luận của bạn có thể còn gây cười hơn chính bức ảnh đó. Like bình luận bạn thích! Bình luận cũng gây cười, tại sao không like nhỉ?
-                </div>
-            </div>
-        </div>
-        <div class="large-3 medium-6 columns">
-            <div class="widgetBox">
-                <div class="widgetTitle">
-                    <h5>Video Gần Đây</h5>
-                </div>
-                <div class="widgetContent">
-                    <?php
-                    $video = \Modules\Video\Entities\Video::Paginate(3);
-
-                    ?>
-                    @foreach($video as $item)
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <div class="recent-img">
-                                <img src= "{{'https://img.youtube.com/vi/'.$item->Url.'/mqdefault.jpg'}}" alt="recent">
-                                <a href="video/{{$item->id}}" class="hover-posts">
-                                    <span><i class="fa fa-play"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="media-object-section">
-                            <div class="media-content">
-                                <h6><a href="video/{{$item->id}}">{{\Modules\Video\Entities\YoutubeHelper::getTitle($item->Url)}}</a></h6>
-                            </div>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-logo">
+                        <img src="{{theme('img/logo-white-text.png')}}" alt="" />
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <br /> magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+                        <div class="widget-icon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
-                    @endforeach
                 </div>
             </div>
         </div>
-        <div class="large-3 medium-6 columns">
-            <div class="widgetBox">
-                <div class="widgetTitle">
-                    <h5>Tags</h5>
+    </div>
+    <!-- footer-top-area start -->
+    <div class="footer-top-area">
+        <div class="container">
+            <div class="row">
+                <!-- footer-widget start -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>CONTACT US</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fa fa-map-marker"> </i>
+                                Addresss: City of London, Guildhall, PO Box 270
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"> </i>
+                                Email: admin@ThemeBuz.com
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"> </i>
+                                Phone: +123 455657589
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tagcloud">
-                    <a href="#">3D Videos</a>
-                    <a href="#">Videos</a>
-                    <a href="#">HD</a>
-                    <a href="#">Phim</a>
-                    <a href="#">Thể Thao</a>
-                    <a href="#">3D</a>
-                    <a href="#">Phim</a>
-                    <a href="#">Ảnh Động</a>
-                    <a href="#">HD</a>
-                    <a href="#">Nhạc</a>
-                    <a href="#">Giải Trí</a>
+                <!-- footer-widget end -->
+                <!-- footer-widget start -->
+                <div class="col-lg-3 col-md-3 hidden-sm">
+                    <div class="footer-widget">
+                        <h3>My account</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Sign-up</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- footer-widget end -->
+                <!-- footer-widget start -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>about us</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer-widget end -->
+                <!-- footer-widget start -->
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>Product tags</h3>
+                        <div class="product-tag">
+                            <ul>
+                                <li><a href="#">Top</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Collection</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">men</a></li>
+                                <li><a href="#">gallery</a></li>
+                                <li><a href="#">new</a></li>
+                                <li><a href="#">Collection men</a></li>
+                                <li><a href="#">Top</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Collection</a></li>
+                                <li><a href="#">best</a></li>
+                                <li><a href="shop.html">cloth</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-widget end -->
             </div>
         </div>
-        <div class="large-3 medium-6 columns">
-            <div class="widgetBox">
-                <div class="widgetTitle">
-                    <h5>Đăng Ký Ngay</h5>
+    </div>
+    <!-- footer-top-area end -->
+    <!-- footer-bottom-area start -->
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="copyright">
+                        <p>Copyright © <a href="#">ThemeBuz</a>. All Rights Reserved</p>
+                    </div>
                 </div>
-                <div class="widgetContent">
-                    <form data-abide novalidate method="post">
-                        <p>Đăng ký để nhận video bản quyền</p>
-                        <div class="input">
-                            <input type="text" placeholder="Nhập Tên " required>
-                            <span class="form-error">
-                                Yo, you had better fill this out, it's required.
-                            </span>
-                        </div>
-                        <div class="input">
-                            <input type="email" id="email" placeholder="Nhập Địa Chỉ Email" required >
-                            <span class="form-error">
-                              Email đã tồn tại!
-                            </span>
-                        </div>
-                        <button class="button" type="submit" value="Submit">Đăng Ký Ngay</button>
-                    </form>
-                    <div class="social-links">
-                        <h5>Mạng Xã hội</h5>
-                        <a class="secondary-button" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-google-plus"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-instagram"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-vimeo"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-youtube"></i></a>
-                        <a class="secondary-button" href="#"><i class="fa fa-flickr"></i></a>
-
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="payment-img">
+                        <img src="{{theme('img/payment.png')}}" alt="" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-double-up"></i></a>
-</footer><!-- footer -->
-<div id="footer-bottom">
-    <div class="logo text-center">
-        <div class="logo">
-            <img src="{{theme('images/logo.png')}}" alt="footer logo" width="100px" height="auto">
-        </div>
-    </div>
-    <div class="btm-footer-text text-center">
-        <p>Website tổng hợp Clip <a href="/">Hài Việt Nam</a> - Nguồn : Youtube.com </p>
-        <p>Chúng tôi không chịu trách nhiệm về bản quuyền</p>
-    </div>
-</div>
+    <!-- footer-bottom-area end -->
+</footer>

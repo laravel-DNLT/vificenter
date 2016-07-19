@@ -132,10 +132,8 @@
 <script src="{{admin('vendors/fastclick/lib/fastclick.js')}}"></script>
 <!-- NProgress -->
 <script src="{{admin('vendors/nprogress/nprogress.js')}}"></script>
-<!-- Chart.js')}} -->
-<script src="{{admin('vendors/Chart.js/dist/Chart.min.js')}}"></script>
-<!-- gauge.js')}} -->
-<script src="{{admin('vendors/gauge.js/dist/gauge.min.js')}}"></script>
+
+
 <!-- bootstrap-progressbar -->
 <script src="{{admin('vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
 <!-- iCheck -->
@@ -153,10 +151,7 @@
 <script src="{{admin('js/flot/date.js')}}"></script>
 <script src="{{admin('js/flot/jquery.flot.spline.js')}}"></script>
 <script src="{{admin('js/flot/curvedLines.js')}}"></script>
-<!-- JQVMap -->
-<script src="{{admin('vendors/jqvmap/dist/jquery.vmap.js')}}"></script>
-<script src="{{admin('vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
-<script src="{{admin('vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
+
 <!-- bootstrap-daterangepicker -->
 <script src="{{admin('js/moment/moment.min.js')}}"></script>
 <script src="{{admin('js/datepicker/daterangepicker.js')}}"></script>
@@ -239,26 +234,7 @@
         }
     });
 </script>
-<!-- /Flot -->
 
-<!-- JQVMap -->
-<script>
-    $(document).ready(function(){
-        $('#world-map-gdp').vectorMap({
-            map: 'world_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: true,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: ['#E6F2F0', '#149B7E'],
-            normalizeFunction: 'polynomial'
-        });
-    });
-</script>
-<!-- /JQVMap -->
 
 <!-- Skycons -->
 <script>
@@ -279,51 +255,6 @@
         icons.play();
     });
 </script>
-<!-- /Skycons -->
-
-<!-- Doughnut Chart -->
-<script>
-    $(document).ready(function(){
-        var options = {
-            legend: false,
-            responsive: false
-        };
-
-        new Chart(document.getElementById("canvas1"), {
-            type: 'doughnut',
-            tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-            data: {
-                labels: [
-                    "Symbian",
-                    "Blackberry",
-                    "Other",
-                    "Android",
-                    "IOS"
-                ],
-                datasets: [{
-                    data: [15, 20, 30, 10, 30],
-                    backgroundColor: [
-                        "#BDC3C7",
-                        "#9B59B6",
-                        "#E74C3C",
-                        "#26B99A",
-                        "#3498DB"
-                    ],
-                    hoverBackgroundColor: [
-                        "#CFD4D8",
-                        "#B370CF",
-                        "#E95E4F",
-                        "#36CAAB",
-                        "#49A9EA"
-                    ]
-                }]
-            },
-            options: options
-        });
-    });
-</script>
-<!-- /Doughnut Chart -->
-
 <!-- bootstrap-daterangepicker -->
 <script>
     $(document).ready(function() {
@@ -396,33 +327,7 @@
         });
     });
 </script>
-<!-- /bootstrap-daterangepicker -->
 
-<!-- gauge.js')}} -->
-<script>
-    var opts = {
-        lines: 12,
-        angle: 0,
-        lineWidth: 0.4,
-        pointer: {
-            length: 0.75,
-            strokeWidth: 0.042,
-            color: '#1D212A'
-        },
-        limitMax: 'false',
-        colorStart: '#1ABC9C',
-        colorStop: '#1ABC9C',
-        strokeColor: '#F0F3F3',
-        generateGradient: true
-    };
-    var target = document.getElementById('foo'),
-            gauge = new Gauge(target).setOptions(opts);
 
-    gauge.maxValue = 6000;
-    gauge.animationSpeed = 32;
-    gauge.set(3200);
-    gauge.setTextField(document.getElementById("gauge-text"));
-</script>
-<!-- /gauge.js')}} -->
 </body>
 </html>

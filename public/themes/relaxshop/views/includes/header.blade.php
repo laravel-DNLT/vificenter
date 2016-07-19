@@ -1,39 +1,269 @@
-<header>
-    <!-- Top -->
-    <section id="top" class="topBar show-for-large">
-        <div class="row">
-            <div class="medium-6 columns">
-                <div class="topBarMenu">
-                    <ul class="menu">
-                        <li>
-                            <a href="{{ url('/') }}"><i class="fa fa-home"></i>Trang chủ</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/danh-muc') }}"><i class="fa fa-th-large"></i>Danh mục</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/gioi-thieu') }}"><i class="fa fa-user"></i>Giới thiệu</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/lien-he') }}"><i class="fa fa-envelope"></i>Liên Hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="medium-6 columns">
-                <div class="top-button">
-                    <div class="socialLinks float-right">
-                        <a href="#"><i class="fa fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-vimeo"></i></a>
-                        <a href="#"><i class="fa fa-youtube"></i></a>
+<header class="header-pos">
+    <!-- header-bottom-area start -->
+    <div class="header-bottom-area">
+        <div class="container">
+            <div class="inner-container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-5">
+                        <div class="logo">
+                            <a href="index.html"><img src="{{theme('img/logo-white-text.png')}}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 hidden-xs hidden-sm">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="http://bit.do/bromq">home</a>
+                                        <ul>
+                                            <li><a href="index.html">home version 1</a></li>
+                                            <li><a href="index-2.html">home version 2</a></li>
+                                            <li><a href="index-3.html">home version 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">about</a></li>
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li class="static"><a href="shop.html">shop</a>
+                                        <div class="mega-menu">
+                                            <div class="mega-left">
+														<span>
+															<a href="shop.html" class="mega-title">WOMEN CLOTH </a>
+															<a href="shop.html">casual shirt</a>
+															<a href="shop.html">rikke t-shirt</a>
+															<a href="shop.html">mia top </a>
+															<a href="shop.html">muscle tee </a>
+														</span>
+														<span>
+															<a href="shop.html" class="mega-title">MEN CLOTH </a>
+															<a href="shop.html">casual shirt</a>
+															<a href="shop.html">rikke t-shirt</a>
+															<a href="shop.html">mia top </a>
+															<a href="shop.html">muscle tee </a>
+														</span>
+														<span>
+															<a href="shop.html" class="mega-title">WOMEN JEWELRY </a>
+															<a href="shop.html">necklace </a>
+															<a href="shop.html">chunky short striped </a>
+															<a href="shop.html">samhar cuff</a>
+															<a href="shop.html">nail set </a>
+														</span>
+														<span>
+															<a href="shop.html" class="mega-title">WOMEN JEWELRY </a>
+															<a href="shop.html">necklace </a>
+															<a href="shop.html">chunky short striped </a>
+															<a href="shop.html">samhar cuff</a>
+															<a href="shop.html">nail set </a>
+														</span>
+														<span>
+															<a href="shop.html" class="mega-title">WOMEN JEWELRY </a>
+															<a href="shop.html">necklace </a>
+															<a href="shop.html">chunky short striped </a>
+															<a href="shop.html">samhar cuff</a>
+															<a href="shop.html">nail set </a>
+														</span>
+                                            </div>
+                                            <div class="mega-right">
+														<span class="mega-menu-img">
+															<a href="shop.html"><img alt="" src="{{theme('img/1.jpg')}}"></a>
+														</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="shop.html">cloth</a>
+                                        <div class="mega-menu mega-menu-2">
+													<span>
+														<a href="shop.html" class="mega-title">WOMEN CLOTH </a>
+														<a href="shop.html">casual shirt</a>
+														<a href="shop.html">rikke t-shirt</a>
+														<a href="shop.html">mia top </a>
+														<a href="shop.html">muscle tee </a>
+													</span>
+													<span>
+														<a href="shop.html" class="mega-title">MEN CLOTH </a>
+														<a href="shop.html">casual shirt</a>
+														<a href="shop.html">rikke t-shirt</a>
+														<a href="shop.html">mia top </a>
+														<a href="shop.html">muscle tee </a>
+													</span>
+													<span>
+														<a href="shop.html" class="mega-title">WOMEN JEWELRY </a>
+														<a href="shop.html">necklace </a>
+														<a href="shop.html">chunky short striped </a>
+														<a href="shop.html">samhar cuff</a>
+														<a href="shop.html">nail set </a>
+													</span>
+													<span class="mega-menu-img">
+														<a href="shop.html"><img alt="" src="{{theme('img/1.jpg')}}"></a>
+													</span>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">pages</a>
+                                        <ul>
+                                            <li><a href="about.html">about</a></li>
+                                            <li><a href="blog.html">blog</a></li>
+                                            <li><a href="blog-2-column.html">blog 2 column</a></li>
+                                            <li><a href="blog-full-width.html">blog full width</a></li>
+                                            <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                            <li><a href="single-blog.html">single blog</a></li>
+                                            <li><a href="single-blog-video.html">single blog video</a></li>
+                                            <li><a href="cart.html">shopping cart</a></li>
+                                            <li><a href="checkout.html">checkout</a></li>
+                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="contact.html">contact</a></li>
+                                            <li><a href="login.html">login</a></li>
+                                            <li><a href="shop.html">shop</a></li>
+                                            <li><a href="product-details.html">product details</a></li>
+                                            <li><a href="shop-full-width.html">shop full width</a></li>
+                                            <li><a href="shop-right-sidebar.html">shop right sidebar</a></li>
+                                            <li><a href="404.html">404 error</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-8 col-xs-7 header-right">
+                        <div class="my-cart">
+                            <div class="total-cart">
+                                <a href="cart.html">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>2</span>
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="cart-img">
+                                        <a href="#"><img alt="" src="{{theme('img/cart/1.jpg')}}"></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h4><a href="#">Vestibulum suscipit</a></h4>
+                                        <span>£165.00 <span>x 1</span></span>
+                                    </div>
+                                    <div class="del-icon">
+                                        <i class="fa fa-times-circle"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-img">
+                                        <a href="#"><img alt="" src="{{theme('img/cart/1.jpg')}}"></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h4><a href="#">Vestibulum suscipit</a></h4>
+                                        <span>£165.00 <span>x 1</span></span>
+                                    </div>
+                                    <div class="del-icon">
+                                        <i class="fa fa-times-circle"></i>
+                                    </div>
+                                </li>
+                                <li class="cart-border">
+                                    <div class="subtotal-text">Subtotal: </div>
+                                    <div class="subtotal-price">£300.00</div>
+                                </li>
+                                <li>
+                                    <a class="cart-button" href="checkout.html">view cart</a>
+                                    <a class="checkout" href="checkout.html">checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-meta">
+                            <a href="#"><i class="fa fa-cog"></i></a>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wish list</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Log in</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <i class="fa fa-search"></i>
+                            <div class="header-form">
+                                <form action="#">
+                                    <input type="text" placeholder="search" />
+                                    <button><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!-- End Top -->
-
-     @include('includes.navbar')
-</header><!-- End Header -->
+    </div>
+    <!-- header-bottom-area end -->
+    <!-- mobile-menu-area start -->
+    <div class="mobile-menu-area visible-xs visible-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul>
+                                <li><a href="index.html">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Homepage Version 1</a></li>
+                                        <li><a href="index-2.html">Homepage Version 2</a></li>
+                                        <li><a href="index-3.html">Homepage Version 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="shop.html">Shop</a>
+                                    <ul>
+                                        <li><a href="#">WOMEN CLOTH</a>
+                                            <ul>
+                                                <li><a href="shop.html">casual shirt</a></li>
+                                                <li><a href="shop.html">rikke t-shirt</a></li>
+                                                <li><a href="shop.html">mia top </a></li>
+                                                <li><a href="shop.html">muscle tee</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">MEN CLOTH</a>
+                                            <ul>
+                                                <li><a href="shop.html">casual shirt</a></li>
+                                                <li><a href="shop.html">rikke t-shirt</a></li>
+                                                <li><a href="shop.html">mia top </a></li>
+                                                <li><a href="shop.html">muscle tee</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">WOMEN JEWELRY</a>
+                                            <ul>
+                                                <li><a href="shop.html">necklace </a></li>
+                                                <li><a href="shop.html">chunky short striped</a></li>
+                                                <li><a href="shop.html">samhar cuff </a></li>
+                                                <li><a href="shop.html">nail set</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">Footwear </a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul>
+                                        <li><a href="about.html">about</a></li>
+                                        <li><a href="blog.html">blog</a></li>
+                                        <li><a href="blog-2-column.html">blog 2 column</a></li>
+                                        <li><a href="blog-full-width.html">blog full width</a></li>
+                                        <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                        <li><a href="single-blog.html">single blog</a></li>
+                                        <li><a href="single-blog-video.html">single blog video</a></li>
+                                        <li><a href="cart.html">shopping cart</a></li>
+                                        <li><a href="checkout.html">checkout</a></li>
+                                        <li><a href="wishlist.html">wishlist</a></li>
+                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="shop.html">shop</a></li>
+                                        <li><a href="product-details.html">product details</a></li>
+                                        <li><a href="shop-full-width.html">shop full width</a></li>
+                                        <li><a href="shop-right-sidebar.html">shop right sidebar</a></li>
+                                        <li><a href="404.html">404 error</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-menu-area end -->
+</header>

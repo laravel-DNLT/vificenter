@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Blog\Entities\post;
 
 class BlogDatabaseSeeder extends Seeder {
 
@@ -15,6 +16,14 @@ class BlogDatabaseSeeder extends Seeder {
 		Model::unguard();
 		
 		// $this->call("OthersTableSeeder");
+		$this->call(PostTableSeederTableSeeder::class);
+		$this->call(TagTableSeeder::class);
 	}
 
+
+
 }
+
+
+
+

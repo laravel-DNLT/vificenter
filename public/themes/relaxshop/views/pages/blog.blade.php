@@ -9,7 +9,8 @@
                             <ul class="breadcrumbs">
                                 <li><i class="fa fa-home"></i><a href="{{ url('/') }}">Trang Chủ</a></li>
                                 <li>
-                                    <span class="show-for-sr">Current: </span> Blog
+                                    <span class="show-for-sr">Current: </span>  <h1>{{ config('blog.title') }}</h1>
+                                    <h5>Page {{ $posts->currentPage() }} of {{ $posts->lastPage() }}</h5>
                                 </li>
                             </ul>
                         </nav>
@@ -21,6 +22,7 @@
                 <div class="row">
                     <!-- left side content area -->
                     <div class="large-8 columns">
+                        @foreach ($posts as $post)
                         <div class="blog-post">
                             <div class="row secBg">
                                 <div class="large-12 columns">

@@ -18,7 +18,7 @@
                             <p style="padding-top: 40px; padding-left: 20px">Phone: (714) 728-8142</p>
                             <p style="padding-left: 67px"> (949) 478-1098</p>
                             <p style="padding-left: 20px">
-                                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;seguinotwines@gmail.com" >Email: seguinotwines@gmail.com</a>
+                                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;seguinotwines@yahoo.com" >Email: seguinotwines@yahoo.com</a>
                             </p>
                         </div>
                     </div>

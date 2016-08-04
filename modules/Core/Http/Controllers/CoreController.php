@@ -2,18 +2,21 @@
 
 use Alaouy\Youtube\Youtube;
 use Carbon\CarbonInterval;
+use Illuminate\Support\Facades\DB;
 use Modules\Video\Entities\Video;
 use Modules\Video\Entities\YoutubeHelper;
 use Pingpong\Modules\Routing\Controller;
+use Modules\Product\Entities\Product;
 
 class CoreController extends Controller {
 
 	public $youtube;
 	public function index()
-	{
-
-		return view('pages.home');
-	}
+{
+	$products = DB::table('products')->select('id','title')->paginate(10);
+//		dd($nproduct);
+		return view('pages.homes', compact('products'));
+}
 
 
 	public function about()

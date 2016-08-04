@@ -27,7 +27,7 @@
 					<!-- Block categories module -->
 					<div id="categories_block_left" class="block nopadding">
 						<h4 class="title_block">
-							Category
+							Categories
 						</h4>
 						<div class="block_content">
 							<ul class="list-block bullet tree dhtml">

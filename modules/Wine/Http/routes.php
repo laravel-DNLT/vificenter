@@ -2,7 +2,7 @@
 
 Route::group(['middleware' => 'web', 'namespace' => 'Modules\Wine\Http\Controllers'], function()
 {
-	Route::get('/', 'WineController@index');
+//	Route::get('/', 'WineController@index');
 	Route::get('/contact', 'WineController@contact');
 	Route::get('/sale-contact', 'WineController@salecontact');
 	Route::get('/change-order', 'WineController@changeorder');

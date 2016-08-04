@@ -11,12 +11,18 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ProductController extends Controller {
 	
-//	public function index()
-//	{
-//		$products = Product::all();
-//		return view('pages.shop-list', ['products' => $products]);
-//	}
-//
+	public function index()
+	{
+		$products = DB::table('products')->select('id','title','imagePath','price','description')->orderBy('id','DESC')->skip(0)->take(4)->get();
+		$product = DB::table('products')->select('id','title','imagePath','price','description')->orderBy('id','ASC')->skip(0)->take(4)->get();
+		return view('pages.homes', compact('products','product'));
+	}
+
+	public function blog() {
+		$cate = DB::table('cates')->select('parent_id')->first();
+		$menu_cate = DB::table('cates')->select('id','title','alias')->where('parent_id',$cate->parent_id)->get();
+		return view('pages.blog', compact('menu_cate'));
+	}
 //	public function AddToCart(Request $request, $id) {
 //		$product = Product::find($id);
 //		$oldCart = Session::has('cart') ? Session::get('cart') : null;
@@ -26,6 +32,12 @@ class ProductController extends Controller {
 //		$request->session()->put('cart', $cart);
 //		dd($request->session()->get('cart'));
 //		return redirect()->route('pages.shop-list');
+//	}
+
+//	public function index() {
+//		$nproduct = Product::all();
+////		dd($nproduct);
+//		return view('pages.home', ['nproduct' => $nproduct]);
 //	}
 
 	public function cate($id) {
@@ -43,10 +55,28 @@ class ProductController extends Controller {
 		return view('pages.product',compact('product','product_cate','name_cate'));
 	}
 
-	public function index() {
-		$product = DB::table('products')->select('id','title','imagePath','price','description')->orderBy('id','DESC')->skip(0)->take(4)->get();
-		$products = DB::table('products')->select('id','title','imagePath','price','description')->orderBy('id','ASC')->skip(0)->take(4)->get();
-
-		return view('pages.home', compact('product','products'));
+	public function contact() {
+		return view('pages.form.contact');
+	}
+	public function sale() {
+		return view('pages.form.sale-contact');
+	}
+	public function change() {
+		return view('pages.form.change-order');
+	}
+	public function Crequest() {
+		return view('pages.form.change-request');
+	}
+	public function Porder() {
+		return view('pages.form.purchase-order');
+	}
+	public function Rquote() {
+		return view('pages.form.request-quote');
+	}
+	public function Sform() {
+		return view('pages.form.supply-form');
+	}
+	public function vendor() {
+		return view('pages.form.vendor');
 	}
 }

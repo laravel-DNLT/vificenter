@@ -31,7 +31,8 @@
             "Modules\\": "modules/"
         },
         "files": [
-            "modules/Core/helper.php"
+            "modules/Core/helper.php",
+            "app/Thuvien/function.php"
         ]
     },
     "autoload-dev": {

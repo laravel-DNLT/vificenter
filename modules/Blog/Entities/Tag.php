@@ -18,7 +18,6 @@ class Tag extends Model {
     {
         return $this->belongsToMany('Modules\Blog\Entities\Post', 'post_tag_pivot');
     }
-
     /**
      * Add any tags needed from the list
      *

@@ -1,0 +1,15 @@
+{
+    "name": "Wine",
+    "alias": "wine",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Wine\\Providers\\WineServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}

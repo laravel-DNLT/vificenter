@@ -1,0 +1,171 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/** CHECKOUT BY STEP */
+/*  
+ * LAYOUT VARIABLES 
+ */
+/*******************************************************************/
+/* Show Multiple Product Image */
+.thumbs_list_frame li a {
+  position: relative;
+}
+.thumbs_list_frame li a.show:after {
+  position: absolute;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: red;
+}
+.rtl .thumbs_list_frame li a.show:after {
+  left: -2px;
+  right: auto;
+}
+
+.leo-more-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  border-width: 1px 0 1px 1px;
+  border-style: solid none solid solid;
+  border-color: #f4f0ef;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  z-index: 4000;
+}
+.rtl .leo-more-info {
+  right: 0;
+  left: auto;
+}
+.rtl .leo-more-info {
+  border-width: 1px 1px 1px 0;
+}
+.rtl .leo-more-info {
+  border-style: solid solid solid none;
+}
+
+.ie8 .product-container .leo-more-info {
+  z-index: -100;
+}
+.ie8 .ajax_block_product:hover .leo-more-info {
+  z-index: 4000;
+}
+
+.ajax_block_product:hover .leo-more-info {
+  left: -95px;
+  padding: 0 7px;
+  width: 95px;
+  opacity: 1;
+}
+.rtl .ajax_block_product:hover .leo-more-info {
+  right: -95px;
+  left: auto;
+}
+
+.ajax_block_product.first_item :hover .leo-more-info {
+  right: -95px;
+  left: auto;
+  border-width: 1px 1px 1px 0;
+  border-style: solid solid solid none;
+  border-color: #f4f0ef;
+}
+.rtl .ajax_block_product.first_item :hover .leo-more-info {
+  left: -95px;
+  right: auto;
+}
+.rtl .ajax_block_product.first_item :hover .leo-more-info {
+  border-width: 1px 0 1px 1px;
+}
+.rtl .ajax_block_product.first_item :hover .leo-more-info {
+  border-style: solid none solid solid;
+}
+
+.leo-more-over {
+  position: relative;
+  z-index: 0;
+}
+
+.leo-more-image {
+  opacity: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.rtl .leo-more-image {
+  right: 0;
+  left: auto;
+}
+
+/* #index {
+    .leo-more-info {
+        .col-1 { width: 80px; margin:5px 0; }
+    }
+} */
+.leo-more-info .big_image {
+  padding-bottom: 5px;
+}
+.leo-more-info .wrapper-hover {
+  padding: 3px 9px 12px;
+}
+.leo-more-info li {
+  list-style-type: none;
+}
+.leo-more-info .view_scroll_left {
+  display: block;
+}
+.leo-more-info .view_scroll_right {
+  display: block;
+}
+
+.thumbs_list {
+  overflow: hidden;
+  width: 81px;
+  height: 354px;
+  margin-top: 7px;
+}
+.thumbs_list ul.thumbs_list_frame {
+  list-style-type: none;
+  padding-left: 0;
+}
+.rtl .thumbs_list ul.thumbs_list_frame {
+  padding-right: 0;
+  padding-left: inherit;
+}
+.thumbs_list li {
+  cursor: pointer;
+  float: left;
+  height: 112px;
+  margin-bottom: 7px;
+  width: 81px;
+}
+.rtl .thumbs_list li {
+  float: right;
+}
+.thumbs_list li a {
+  display: block;
+  text-align: center;
+}
+
+#product_comparison .product-container:hover .center_block .product_image img {
+  opacity: 1!important;
+}

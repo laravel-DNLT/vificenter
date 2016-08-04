@@ -1,0 +1,466 @@
+/* RIGHT TO LEFT */
+/**********************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\000033}}
+.paneltool.themetool .panelcontent {
+  min-height: 210px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\000038}}
+.fancybox-skin .leo-paneltool {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000313}}
+.paneltool {
+  position: fixed;
+  top: 5px;
+  transition: all 0.6s;
+  left: -325px;
+  border: solid 1px #CCC;
+  -webkit-box-shadow: 1px -1px 3px #888888;
+  box-shadow: 1px -1px 3px #888888;
+  z-index: 999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000323}}
+.rtl .paneltool {
+  right: -325px;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000327}}
+.paneltool.active {
+  left: 0;
+  transition: all 0.6s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000331}}
+.rtl .paneltool.active {
+  right: 0;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000335}}
+.paneltool.active .panelbutton {
+  color: red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000338}}
+.paneltool .panelcontent {
+  background: #FFF;
+  width: 320px;
+  min-height: 340px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000343}}
+.paneltool .panelcontent > div {
+  padding: 15px 15px 15px 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000346}}
+.rtl .paneltool .panelcontent > div {
+  padding: 15px 15px 15px 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000350}}
+.paneltool.themetool {
+  top: 70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000354}}
+.panelbutton {
+  border: solid 1px #CCC;
+  background: #FFF;
+  padding: 9px 11px;
+  position: absolute;
+  right: -33px;
+  top: 10px;
+  border-left: none;
+  cursor: hand;
+  cursor: pointer;
+  -webkit-box-shadow: 3px -1px 2px #888888;
+  box-shadow: 3px -1px 2px #888888;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000367}}
+.rtl .panelbutton {
+  left: -33px;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000372}}
+.editortool .panelbutton {
+  top: 290px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000376}}
+#leo-paneltool.panel-open .panel-inner {
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000379}}
+.rtl #leo-paneltool.panel-open .panel-inner {
+  left: 0;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000384}}
+#leo-paneltool h4 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000389}}
+#leo-paneltool .accordion-group {
+  margin-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000393}}
+#leo-paneltool form .group-input {
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\0000397}}
+#leo-paneltool select {
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003101}}
+.box-patterns div {
+  display: block;
+  width: 38px;
+  height: 38px;
+  float: left;
+  cursor: hand;
+  cursor: pointer;
+  border: solid 1px #f3f3f3;
+  margin: 6px;
+  border: 1px solid #ccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003112}}
+.rtl .box-patterns div {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003116}}
+.box-patterns div.active {
+  border: solid 1px red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003121}}
+#leo-paneltool .nav-tabs > li:before,
+#leo-paneltool .nav-tabs > li:after {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003125}}
+#customize-form {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003129}}
+#main-preview {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-left: 300px;
+  transition-duration: 0.2s;
+  transition-property: left, right, top, bottom, width, margin;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003140}}
+.rtl #main-preview {
+  right: 0;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003144}}
+.rtl #main-preview {
+  left: 0;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003148}}
+.rtl #main-preview {
+  margin-right: 300px;
+  margin-left: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003153}}
+#main-preview iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003158}}
+.main-preview #leo-paneltool {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003162}}
+.colorpicker {
+  z-index: 99999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003166}}
+#leo-paneltool {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -320px;
+  z-index: 9999;
+  box-shadow: 0 1px 3px #999;
+  transition-duration: 0.2s;
+  transition-property: left, right, top, bottom, width, margin;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003179}}
+.rtl #leo-paneltool {
+  right: -320px;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003184}}
+#leo-paneltool .wrapper {
+  padding: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003188}}
+#customize-body input[type="text"], #customize-body select {
+  border: 1px solid #E2E2E2;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  font-size: 11px;
+  margin: 0 5px 0 0;
+  padding: 2px 3px;
+  width: 65px;
+  height: auto;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003200}}
+#customize-body select {
+  color: #888;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003204}}
+#customize-body .accordion-group label {
+  color: #888;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003210}}
+#customize-body .panel-heading {
+  padding: 5px 6px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003216}}
+#customize-body .accordion-group .input-group .input-group-addon {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  float: right;
+  margin-top: 2px;
+  width: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003224}}
+.rtl #customize-body .accordion-group .input-group .input-group-addon {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003228}}
+#customize-body .panel-heading a {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003232}}
+.form-group {
+  margin-right: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003235}}
+.rtl .form-group {
+  margin-left: 6px;
+  margin-right: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003240}}
+.accordion-group label, .form-group label {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003244}}
+.accordion-group label {
+  min-width: 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003248}}
+#leo-paneltool .btn {
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003254}}
+#leo-paneltool .btn-show {
+  position: absolute;
+  top: 39px;
+  padding: 6px 18px;
+  background: #CCC;
+  right: 11px;
+  z-index: 99;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
+  cursor: hand;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003266}}
+.rtl #leo-paneltool .btn-show {
+  left: 11px;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003271}}
+#customize-body .nav-tabs {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003275}}
+#customize-body .nav-tabs a {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003279}}
+#customize-body .nav-tabs a {
+  font-weight: bold;
+  font-size: 11px;
+  padding: 6px 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003285}}
+#customize-body .nav-tabs .active a {
+  background: #58B0DA;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #FFFFFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003293}}
+.accordion-heading .accordion-toggle {
+  font-size: 11px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003297}}
+#customize-body .form-group {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003301}}
+.rtl #customize-body .form-group {
+  margin-left: 0;
+  margin-right: inherit;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003306}}
+#customize-body .accordion-inner .form-group .input-group {
+  display: inline-block;
+  width: 92px;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003311}}
+.rtl #customize-body .accordion-inner .form-group .input-group {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003315}}
+.clear-bg {
+  padding: 3px 6px;
+  margin-left: 5px;
+}
+
+/* .tab-content > .tab-pane, .pill-content > .pill-pane {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 13px;
+} */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003324}}
+.bi-wrapper > div {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 3px 4px;
+  border: solid 1px #999;
+  cursor: hand;
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003333}}
+.rtl .bi-wrapper > div {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003337}}
+.bi-wrapper > div.active {
+  border-color: red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003341}}
+.btn-small {
+  border-radius: 0;
+  background-color: #58B0DA;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003348}}
+.btn-small:hover {
+  background-color: #C83A3A;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003353}}
+.editortool .label-customize {
+  background-image: url("../img/label_customize.png");
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 74px;
+  padding: 0;
+  position: absolute;
+  right: -155px;
+  top: 250px;
+  width: 115px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003368}}
+.rtl .editortool .label-customize {
+  left: -155px;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003373}}
+.editortool .label-customize:hover {
+  background-position: 0 -111px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/htdocs\/prestashop\/demo1606\/leo_wine_store2\/themes\/leo_wine_store\/sass\/paneltool\.scss}line{font-family:\00003377}}
+.paneltool.active .label-customize {
+  display: none;
+}

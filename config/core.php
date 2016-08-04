@@ -3,6 +3,6 @@
 return [
 	'name' => 'Core',
 	'folder' => 'themes',
-	'active' => 'relaxshop',
+	'active' => 'wine',
 	'nail'=>'nail'
 ];
